@@ -1,0 +1,208 @@
+/* ------------------------------------------------- */
+/* Not important for the responsive Grid - Layout
+/* ( only for info - styling )
+/* ------------------------------------------------- */
+
+/* <h1> smaller & style */
+h1 { 
+    font-size: 1.2em; 
+    background-color: #d1c0a5;
+    padding: .5em;
+    border: .1em solid black;
+}
+
+.header-topics { font-weight: bold;}
+
+.p-text-topics { 
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+.info-box {
+    border: .15em dotted black;
+    padding: .5em;
+    margin-bottom: 1em;
+    background-color: #d1c0a5;
+}
+
+/* ------------------------------------------------- */
+/* CSS - STANDARDS for Desktop Views &               */
+/* Def. 2 - Grids for Desktop & Mobile               */
+/* ( Mobile View changes in media queries )          */
+/* ------------------------------------------------- */
+
+/* Web - Page default */
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+
+/* All <img> in <pic.> block & max width */
+picture > img { display: block; width: 100%; } 
+
+/* delete basic margin of fig. */
+figure{ margin: 0px;}
+
+/* Image caption place */
+figure > picture > figcaption {
+    padding-top: .5em;
+    padding-left: .3em;
+    font-size: .8em;
+    font-style: italic;
+}
+
+/* <p> as txt modify for Desktop Views */
+main > div > p {
+   
+    /* <p> distanc. minimalism */
+    margin-top: .3em;
+    margin-bottom: .3em;
+    margin-left: .3em;
+    margin-right: .5em;
+
+    /* <p> basically center-middle */
+    /*display: flex;
+    justify-content: center;
+    align-items: center;   */   
+}
+
+
+.span-author {
+    display: block; 
+    text-align: right;
+    padding: .8em;
+
+    font-size: .8em;
+    font-weight: bold;
+    
+}
+
+/* ------------------------------------------------ */
+/* 2 x Grid - Layouts ( Mobile / Desktop - View )   */
+/* ------------------------------------------------ */
+
+/* ( Similiarities ) */
+main#grid-img-txt , main#grid-img-txt > div {
+    display: grid;
+    background-color: lightskyblue;
+}
+
+/* Smartphone Layout - 1.col, x-rows */
+main#grid-img-txt { row-gap: 1em; }
+   
+/* Desktop Layout - 2.col , x-rows */    
+main#grid-img-txt > div {
+   
+    grid: auto / 1fr 1fr;
+    column-gap: 1em;
+}
+
+
+
+
+
+
+
+/* ------------------------------------------------- */
+/* MEDIA QUERIES ( Mobile , Desktop ) &              */
+/* 3 x Media Queries - Smartphone / Tablets          */
+/* 3 x Media Queries - Desktop , <= 23 Zoll          */
+/* 1 x Media Queries - Desktop , >= 23 Zoll          */
+/* ------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- */
+/* Media Queries - Smartphones & Tablets 
+/* ------------------------------------------------------------- */
+
+/* Smartphones 180px - 520px , 1.col , x-rows */
+@media (min-width: 180px) and (max-width: 520px) {
+    
+    main#grid-img-txt > div {
+        /* reset basic grid (1fr 1fr)*/
+        display: grid;
+        /* 1.col , x-row */
+        grid: auto / 1fr;
+    }
+
+    /* adjust p for smartphone */
+    main#grid-img-txt > div p { 
+        /* txt distance to img little bit bigger */
+        margin-top: .8em;
+    }
+}
+
+/* Small Tablets until Large Tablets 551 - 930px */
+/* ( Text flowing around )*/
+@media (min-width: 521px) and (max-width: 930px) {
+
+    main#grid-img-txt > div {
+        /*reset std. grid (1fr 1fr) to 1fr*/
+        display: grid;
+        grid: auto / 1fr;
+        /* allow flow text in div */
+        display: block;
+    }
+   
+    main#grid-img-txt > div > figure > picture  {
+        float:left;
+        width: 50%;
+        padding-right:1em;
+        padding-bottom: .8em;
+    }
+
+    /* std. p-> flex , change to block for textflow image */
+    main#grid-img-txt > div > p {  display: block; }
+
+
+  
+}
+
+
+/* Large Tablets until larger scales (Desktops) 931 - 1080px */
+/* ( 2.col widht relative width ) */
+@media (min-width: 931px) and (max-width: 1080px) {
+
+    /* float: left clean exit */
+    main#grid-img-txt > div > picture > img { clear:left; }
+
+    main#grid-img-txt > div { grid: auto / 1fr 1.5fr; }
+  
+}
+
+
+/* ------------------------------------------------------------- */
+/* Media Queries - Dektops <= 23 Zoll  
+/* ------------------------------------------------------------- */
+
+@media (min-width: 1081px) and (max-width: 1280px) {
+
+    main#grid-img-txt > div { grid: auto / 1fr 2fr;  }
+}
+
+
+@media (min-width: 1281px) and (max-width: 1600px) {
+
+    main#grid-img-txt > div { grid: auto / 1fr 3fr;  }
+
+}
+
+
+@media (min-width: 1601px) and (max-width: 1920px) {
+
+    main#grid-img-txt > div { grid: auto / 1fr 3fr;  }
+
+}
+
+/* ------------------------------------------------------------- */
+/* Media Queries - Dektops > 23 Zoll 
+/* ------------------------------------------------------------- */
+
+@media (min-width: 1921px) {
+
+    main#grid-img-txt > div { grid: auto / 1.3fr 4fr;  }
+  
+}
+

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <title>Test Img Responsive</title>
+</head> 
+
+
+<body>
+
+    <!-- ----------------------------------------------------------------- -->
+    <!-- HEADER                                                            -->
+    <!-- ----------------------------------------------------------------- -->
+    <header>
+
+        <h1><u>Grid-Layout:</u> Row - ( Image + Text ) - ( Live ) </h1>
+
+        <!-- ------------------------------------------------------------- -->
+        <!-- Info- box -->
+        <!-- ------------------------------------------------------------- -->
+        <div class="info-box">
+        
+            <span class="header-topics">🔨 How to test it ?</span>
+            <p class="p-text-topics"> 
+                Scale ur Web - Browser Page in different sizes and see what happend.
+                If u are on Google Chrome Web - Browser / Firefox , u can
+                right click -> investigate / (GE) Untersuchen and work with the 
+                Web - Development - Tool of ur Browser to scale in more option ways.
+            </p> 
+            
+            
+            <span class="header-topics">⚙️ Features / Functions </span>
+            <ul>
+                <li>Responsive images with internet bandwidth performance ( load differents image files , HTML - srcset - Solution )</li>
+                <li>2 x Grid - Layouts , 1 x Mobile ( 1.col ) , 1 x Desktop ( 2.cols ) </li>
+            </ul>
+
+            </div>
+
+    </header>
+
+
+
+    <!-- ----------------------------------------------------------------- -->
+    <!-- MAIN                                                              -->
+    <!-- ----------------------------------------------------------------- -->
+
+     <!-- Grid - Bild-Text - Layout -->
+    <main title="Bilder Text Zeilen" id="grid-img-txt">
+
+        <div>
+            <!-- 1. Spalte , 1. Zeile  --> 
+            <figure>
+
+                <picture>
+                    <source srcset="../../img/bild-text-zeile/landschaft-320w_200h_px.jpg" media="(max-width:480px)" />
+                    <source srcset="../../img/bild-text-zeile/landschaft-480w_300h_px.jpg" media="(max-width: 600px)" />
+                    <source srcset="../../img/bild-text-zeile/landschaft-600w_375h_px.jpg" media="(max-width: 920px)" />
+                    <source srcset="../../img/bild-text-zeile/landschaft-800w_500h_px.jpg" media="(max-width: 1000px)" />
+
+                    <img src="../../img/bild-text-zeile/landschaft-800w_500h_px.jpg" alt="Bild_Landschaft">
+
+                    <figcaption><strong>Abb. 01 - </strong> Valley of Redwood City since 2019 ( July )</figcaption>
+
+                </picture>
+
+            </figure>
+
+            <!-- 1. Spalte , 2.Zeile / 1. Zeile, 2. Spalte --> 
+            <p>Rheinwerk openbook ist ein kostenloser
+                Service von uns für Sie. Wir bieten Ihnen
+                auf dieser Seite die HTML-Version eines
+                vollständigen Buches für Ihre Aus- und
+                Weiterbildung. Stöbern Sie in unserem Angebot
+                an Openbooks, wir haben für Sie aus jedem Programmbereich
+                Bücher ausgesucht. Sie können das Openbook jederzeit
+                online lesen und zum Vertiefen Ihrer Kenntnisse nutzen.
+                Und gerne dürfen Sie die Openbooks für Ihren
+                privaten Gebrauch auch ausdrucken. 
+                <span class="span-author"> 
+                    <img src="../../img/svg/pfeil-wiederholen.svg" width="15" height="15">
+                    04.12.19 , nick123 </span>
+            </p>
+
+        </div>
+
+        <div>
+            <figure>
+           
+                <picture>
+                    <source srcset="../../img/bild-text-zeile/water_stone_320px.webp" media="(max-width:480px)" />
+                    <source srcset="../../img/bild-text-zeile/water_stone_480px.webp" media="(max-width: 600px)" />
+                    <source srcset="../../img/bild-text-zeile/water_stone_600px.webp" media="(max-width: 920px)" />
+                    <source srcset="../../img/bild-text-zeile/water_stone_800px.webp" media="(max-width: 1000px)" />
+
+                    <img src="../../img/bild-text-zeile/water_stone_800px.webp" alt="Bild_Stone_Water">
+
+                    <figcaption><strong>Abb. 02 - </strong> Canada Nature Park since 2019 ( October )</figcaption>
+
+                </picture>
+
+            </figure>
+
+          
+            <p>Rheinwerk openbook ist ein kostenloser
+                Service von uns für Sie. Wir bieten Ihnen
+                auf dieser Seite die HTML-Version eines
+                vollständigen Buches für Ihre Aus- und
+                Weiterbildung. Stöbern Sie in unserem Angebot
+                an Openbooks, wir haben für Sie aus jedem Programmbereich
+                Bücher ausgesucht. Sie können das Openbook jederzeit
+                online lesen und zum Vertiefen Ihrer Kenntnisse nutzen.
+                Und gerne dürfen Sie die Openbooks für Ihren
+                privaten Gebrauch auch ausdrucken. 
+                <span class="span-author">
+                    <img src="../../img/svg/pfeil-wiederholen.svg" width="15" height="15">
+                    14.12.19 , lisaXunicorn07 </span>
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <figure>
+
+                <picture>
+                    <source srcset="../../img/bild-text-zeile/mond_320px.webp" media="(max-width:480px)" />
+                    <source srcset="../../img/bild-text-zeile/mond_480px.webp" media="(max-width: 600px)" />
+                    <source srcset="../../img/bild-text-zeile/mond_600px.webp" media="(max-width: 920px)" />
+                    <source srcset="../../img/bild-text-zeile/mond_800px.webp" media="(max-width: 1000px)" />
+
+                    <img src="../../img/bild-text-zeile/mond_800px.webp" alt="Bild_Mond">
+
+                    <figcaption><strong>Abb. 03 - </strong> Lovely Pictureshot of the moon since 2019 (November) </figcaption>
+
+                </picture>
+
+            </figure>
+           
+            <p>Rheinwerk openbook ist ein kostenloser
+                Service von uns für Sie. Wir bieten Ihnen
+                auf dieser Seite die HTML-Version eines
+                vollständigen Buches für Ihre Aus- und
+                Weiterbildung. 
+                <span class="span-author">
+                    <img src="../../img/svg/pfeil-wiederholen.svg" width="15" height="15">
+                    24.12.19 , peterChampion01 </span>
+            </p>
+
+        </div>
+
+    
+    </main>
+
+</body>    
+
+</html>
+

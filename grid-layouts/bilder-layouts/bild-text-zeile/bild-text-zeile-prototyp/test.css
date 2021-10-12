@@ -1,0 +1,202 @@
+/* ------------------------------------------------- */
+/* STANDART CSS - Werte für Desktop Ansicht  &       */ 
+/* Grid - Layout  für Mobile & Desktop               */
+/* ( Mobile Ansichten werden mit m.q angepasst )     */
+/* ------------------------------------------------- */
+
+/*:root -> beginnt ab <html> */
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+/* Testzweck, wie <picture> sich b. Skal. verhält */
+picture { background-color: blue; }
+
+/* alle Bilder in pic. 100% Breite einnehmen */
+/* ( blau verschwindet -> height:100%, wenn weiß, dann egal ) */
+picture > img { display: block; width: 100%; } 
+
+/* Modif. p - Text für Desktop - Ansicht ( etwas kleiner ) */
+main > div > p {
+   
+    /* std. p minimiert */
+    margin-top: .3em;
+    margin-bottom: .3em;
+    margin-left: .3em;
+    margin-right: .5em;
+
+    /* Std. zentriert - mittig für große txt - Breiten */
+    /* ( proporti. zum Bild ) */
+    display: flex;
+    justify-content: center;
+    align-items: center;      
+}
+
+/* ------------------------------------------------ */
+/* 2. Grid - Layouts Standard Definitionen          */
+/* ------------------------------------------------ */
+
+
+/* 2 x Grid für Mobile & Desktop */
+/*( Gemeinsamkeiten ) */
+main#grid-img-txt , main#grid-img-txt > div {
+    display: grid;
+    background-color: lightskyblue;
+}
+
+
+/* x1 - Grid für Smartphone / kleine Tablets */
+/* ( 1. Spalte , x - Zeilen )*/
+/* Zeilenabstand bei mind. 2. Zeilen  */
+main#grid-img-txt { row-gap: 1em; }
+   
+    
+/* x2 Grid für Desktop - Ansichten */
+/* ( 2. Spalten je 1.Zeile mit img & txt ) */
+/* Spaltenabstand bei min. 2. Spalten */
+main#grid-img-txt > div {
+   
+    grid: auto / 1fr 1fr;
+    column-gap: 1em;
+}
+
+
+
+
+/* ------------------------------------------------------------- */
+/* Media Queries - Smartphones & Tablets 
+/* ------------------------------------------------------------- */
+
+/* kleine Smartphone bis große Smartphones */
+/* ( 1. Spaltenlayout - x - Zeilen ) */
+
+@media (min-width: 180px) and (max-width: 520px) {
+    
+    main#grid-img-txt > div {
+        /*altes grid reseten*/
+        /*( gilt nur im aktuellen m.q - Block )*/
+        display: grid;
+        grid: auto / 1fr;
+    }
+
+    main#grid-img-txt > div p { 
+        /* oberer Abstand zum Bild vergrößern ( angenehmer )*/
+        margin-top: .8em;
+        /* hier wird kein minimaler Abstand nach unten gebr.*/
+        /* row - gap: 1em reicht */
+        margin-bottom: 0em;
+    }
+}
+
+
+/* kleine Tablets bis große Tablets */
+/* ( Text umfließt Bild )*/
+
+@media (min-width: 521px) and (max-width: 930px) {
+
+    main#grid-img-txt > div {
+        /*altes grid reseten*/
+        /*( gilt nur im aktuellen m.q - Block )*/
+        display: grid;
+        grid: auto / 1fr;
+        /* Fließtext in div ermöglichen */
+        display: block;
+    }
+   
+    main#grid-img-txt > div > picture > img {
+        float:left;
+        width: 50%;
+        padding-right:1em;
+        padding-bottom: .8em;
+        
+    }
+
+    main#grid-img-txt > div > p { 
+
+        /* st. p in standard Block - Position bringen */
+        /* ( display:flex reseten -> für fließtext )*/
+        display: block;
+        background-color: lightgreen;
+     }
+  
+}
+
+
+/* größere Tablets / größere Skalierungen */
+/* ( 2.Spaltenlayout relativ zur Bildschirmgröße erweitern ) */
+
+@media (min-width: 931px) and (max-width: 1080px) {
+
+    /* float: left voher sauber beenden */
+    main#grid-img-txt > div > picture > img { clear:left; }
+
+    main#grid-img-txt > div {
+        grid: auto / 1fr 1.5fr;
+    }
+
+    main#grid-img-txt > div > p { 
+        background-color: orange;
+    }
+  
+}
+
+
+/* ------------------------------------------------------------- */
+/* Media Queries - Dektops <= 23 Zoll  
+/* ------------------------------------------------------------- */
+
+@media (min-width: 1081px) and (max-width: 1280px) {
+
+    main#grid-img-txt > div {
+        grid: auto / 1fr 2fr;
+    }
+
+    main#grid-img-txt > div > p { 
+        background-color: yellow;
+    }
+  
+}
+
+@media (min-width: 1281px) and (max-width: 1600px) {
+
+    main#grid-img-txt > div {
+        grid: auto / 1fr 3fr;
+    }
+
+    main#grid-img-txt > div > p { 
+        background-color: gold;
+    }
+  
+}
+
+@media (min-width: 1601px) and (max-width: 1920px) {
+
+    main#grid-img-txt > div {
+        grid: auto / 1fr 3fr;
+    }
+
+    main#grid-img-txt > div > p { 
+        background-color: lightsalmon;
+    
+    }
+  
+}
+
+/* ------------------------------------------------------------- */
+/* Media Queries - Dektops > 23 Zoll 
+/* ------------------------------------------------------------- */
+
+@media (min-width: 1921px) {
+
+    main#grid-img-txt > div {
+        grid: auto / 1.3fr 4fr;
+    }
+
+    main#grid-img-txt > div > p { 
+        background-color: lightseagreen;
+    }
+  
+}
+
