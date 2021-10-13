@@ -1,4 +1,32 @@
 /* ------------------------------------------------- */
+/* Not important for the responsive Grid - Layout
+/* ( only for info - styling )
+/* ------------------------------------------------- */
+
+/* <h1> smaller & style */
+h1 { 
+    font-size: 1.2em; 
+    background-color: #d1c0a5;
+    padding: .5em;
+    border: .1em solid black;
+}
+
+.header-topics { font-weight: bold;}
+
+.p-text-topics { 
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+.info-box {
+    border: .15em dotted black;
+    padding: .5em;
+    margin-bottom: 1em;
+    background-color: #d1c0a5;
+}
+
+
+/* ------------------------------------------------- */
 /* STANDART CSS - Werte für Desktop Ansicht  &       */ 
 /* Grid - Layout  für Mobile & Desktop               */
 /* ( Mobile Ansichten werden mit m.q angepasst )     */
