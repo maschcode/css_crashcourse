@@ -49,6 +49,7 @@ figure{ margin: 0px;}
 figure > picture > figcaption {
     padding-top: .5em;
     padding-left: .3em;
+    padding-right: .3em;
     font-size: .8em;
     font-style: italic;
 }
@@ -61,22 +62,27 @@ main > div > p {
     margin-bottom: .3em;
     margin-left: .3em;
     margin-right: .5em;
+}
 
-    /* <p> basically center-middle */
-    /*display: flex;
-    justify-content: center;
-    align-items: center;   */   
+
+.span-icon-message-author {
+    /*svg - icon size */
+    width: 1em;
+    height: 1em;
+    padding-right: .5em;
 }
 
 
 .span-author {
-    display: block; 
-    text-align: right;
+    /* center - rigt position*/
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
     padding: .8em;
 
     font-size: .8em;
-    font-weight: bold;
-    
+    font-weight: bold;  
 }
 
 /* ------------------------------------------------ */
