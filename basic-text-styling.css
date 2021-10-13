@@ -3,12 +3,12 @@
 /* ( e.g h1, div, p , ... )
 /* ------------------------------------------------- */
 
-/* <h1> smaller & style */
+/* <h1> smaller & style , 1.2 */
 h1 { 
-    font-size: 1.2em; 
+    font-size: 5.2em; 
     background-color: #d1c0a5;
     padding: .5em;
-    border: .8em solid black;
+    border: .1em solid black;
 }
 
 .header-topics { font-weight: bold;}
