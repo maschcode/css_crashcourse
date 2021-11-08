@@ -1,0 +1,203 @@
+/* ---------------------------------------------------------- */
+/* MAIN ( all basic styles which needs in main )
+/* ---------------------------------------------------------- */
+/* - grid layouts 
+/* - basic table style e.g infobox header etc. 
+/* - text style & positions
+/* ---------------------------------------------------------- */
+
+
+
+
+
+/* ---------------------------------------------------------- */
+/* Grid Layouts 
+/* ---------------------------------------------------------- */
+/* - main grid 
+/* - inside grid ( header, template )
+/* ---------------------------------------------------------- */
+
+
+
+/* ---------------------------------------- */
+/* Main - for infoboxes 
+/* ---------------------------------------- */
+
+#grid-infoboxes {
+
+    display: grid;
+    /* basic 3.col layout */
+    grid: auto / 1fr 1fr 1fr;
+    /* row gap , col gap */
+    gap: 1em;
+}
+
+
+/* ------------------------------------------------------------------ */
+/* Inside infobox - Grid Layout ( handle content height differently )
+/* ------------------------------------------------------------------- */
+
+.grid-header-template {
+
+    /* inside content max width */
+    /* ( better to make %-differences by elements ) */
+    width: 100%;
+
+    /* basic grid is row - layout */
+    display: grid;
+  
+    grid-template-rows: auto 1fr;
+
+
+    /* only need row gap */
+    row-gap: 1em;
+}
+
+.grid-2-cols {
+    grid-column: 1 / span 2;
+}
+    
+
+
+
+
+
+/* ---------------------------------------------------------- */
+/* STYLTING - Header Infobox ( title , prototyp ) 
+/* ---------------------------------------------------------- */
+/* - table structure
+/* ---------------------------------------------------------- */
+
+
+/* ----------------------------- */
+/* Table 1.row 
+/* ( header - title )
+/* ----------------------------- */
+
+tr.style-header-infobox td {
+
+    background-color: var(--moon-dark);
+    color: var(--skin-brown);
+    padding:.5em;
+    height: 30px;
+}
+
+/* style table info title */
+.style-header-it { font-weight: bold; padding-right: .5em;}
+
+/* style table info description */
+.style-header-id { 
+
+    font-size: .8em;
+    font-style: italic;
+    padding-left: .5em;
+}
+
+
+
+
+
+/* ----------------------------- */
+/* Table 2.row 
+/* ( txt , proto image ) 
+/* ----------------------------- */
+
+/* mini grid proto 
+/* ( bring txt & proto img next each other ) */
+.grid-proto {
+
+    display: grid;
+    grid: 200px / 1fr 1fr;
+
+    align-items: center;
+    /* free space for better clear view */
+    margin-top: .3em;
+    margin-bottom: .3em;
+
+    background-color: var(--skin-brown);
+}
+
+
+/* img basic proto */
+.img-proto-size {
+
+    width: auto;
+    height: 10em;
+}
+
+/* img proto bigger width size */
+.img-proto-bw-size {
+
+    width: 13em;
+    height: auto;
+}
+
+
+/* info stlye,font - ( prototyp , reality positon ) */
+.grid-proto div:first-child {
+    
+    text-align: center;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+/* img prot position right */
+.grid-proto img {
+
+    display: block;
+    /* info: margin-right:0px; */
+    margin-left: auto;
+}
+
+/* unicode arrow right transform downstairs because
+/* this special unicode dont exist in downstairs way */
+.arrow-90deg { transform: rotate(90deg); }
+
+   
+
+
+
+
+
+/* ----------------------------- */
+/* Table 3.row 
+/* ( solution info ) 
+/* ----------------------------- */
+
+/* info: dont need any style in 3.row actually */
+
+.row-3nd {  height:60px; vertical-align: top; }
+
+
+   
+
+/* ----------------------------- */
+/* Table 4.row 
+/* ( table view infobox ) 
+/* ----------------------------- */
+
+div.grid-header-template table:nth-child(2) table.style-infobox, 
+ div.style-img-infobox , .style-infobox { 
+    
+    border: 1px solid var(--moon-dark);
+    background-color: var(--light-grey);  
+}
+
+
+/* infoboxes with padding outside */
+
+table.style-infobox , .style-infobox { padding: .3em; }
+
+
+/* pos all templates on the top by growing content height */
+div.grid-header-template table:nth-child(2) tr td { 
+    vertical-align: top;
+}
+
+
+
+
+
+
+
+
+

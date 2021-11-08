@@ -1,0 +1,76 @@
+/* ---------------------------------------------------------- */
+/* #3 - Infocard - feed block entry with 2 persons 
+/* ---------------------------------------------------------- */
+/* - layout
+/* ---------------------------------------------------------- */
+
+
+
+/* grid-layout */
+
+#grid-server { 
+
+    display: grid;
+    grid: auto / 1fr 1fr;
+    gap: .3em;
+}
+
+
+
+
+
+
+
+.color-box { 
+
+    width: 50px;
+    height: 50px;
+   
+    border: 1px solid var(--moon-dark);
+
+    margin-right:.3em;
+
+    float:left;
+}
+
+.color-yellow { background-color: yellow; }
+.color-red { background-color: red; }
+.color-green { background-color: lightgreen; }
+
+/* server is offline */
+.color-grey { background-color: gray; }
+
+
+.i3-info-content { 
+   
+    height: 50px;
+   
+    margin:0;
+    padding:0;
+
+}
+
+.h1-i3 { 
+
+    font-size: .4em;
+    margin-top: -8px;
+    margin-bottom: -15px;
+    
+}
+
+.div-i3-infos { 
+
+    font-size: .4em;
+    padding:0;
+    margin-bottom: -17px;
+}
+
+/* float-right exist by infobox 4 */
+.float-left { float: left; }
+
+
+/* date in minibox */
+.mini-datebox { 
+    text-align: right;
+    padding-right: .5em;
+}

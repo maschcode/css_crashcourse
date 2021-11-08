@@ -1,0 +1,92 @@
+/* ------------------------------------------------------------- */
+/* Media Queries - Smartphones & Tablets 
+/* ( from 1920px to smaller devices & in the end optional for 
+/*   bigger sizes more in the middle )
+/* ------------------------------------------------------------- */
+
+
+
+
+
+
+/* --------------------------------------------------------------- */
+/* <= 1500px width */
+/* ( proto img little bit smaller ) */
+/* --------------------------------------------------------------- */
+
+/* if scrollbar is open then depends on browser 13 - 20px width (minus)*/
+@media (max-width: 1517px) {
+
+ 
+    /* img proto size */
+    .img-proto-size {
+    
+        width: auto;
+        height: 7em;
+
+    }
+
+    /* img-proto-big-horizontal size */
+    .img-proto-bw-size { 
+
+        width: 12em;
+        height: auto;
+    }
+  
+}
+
+
+
+
+/* --------------------------------------------------------------- */
+/* 860px <= 1200px */
+/* ( 17px of scrollbar width chrome )*/
+/* ( make 2.column layout )
+/* --------------------------------------------------------------- */
+
+@media (min-width: 873px) and (max-width: 1200px) {
+
+    #grid-infoboxes {
+    
+        display: grid;
+        grid: auto / repeat( 2, 1fr );
+    
+        gap: 1em;
+        
+    }
+  
+}
+
+
+
+/* --------------------------------------------------------------- */
+/* 320px <= 859px */
+/* ( make 1.column layout -> mobile devices )
+/* --------------------------------------------------------------- */
+
+@media (min-width: 320px) and (max-width: 872px) {
+
+    #grid-infoboxes {
+    
+        display: grid;
+        grid: auto / 1fr;
+    
+        gap: 1em;
+        
+    }
+
+}
+
+
+
+/* ------------------------------------------------------------- */
+/* Media Queries - Dektops > 23 Zoll 
+/* ------------------------------------------------------------- */
+
+@media (min-width: 1921px) {
+
+ 
+  
+}
+
+

@@ -1,0 +1,22 @@
+/* ------------------------------------------------- */
+/* CSS Basics Styling Settings
+/* :root , body 
+/* ------------------------------------------------- */
+
+/*:root -> beginnt ab <html> */
+:root {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+
+    /* basic var colors */
+    --css-blue: #2dceff;
+    --skin-brown: #d1c0a5;
+    --moon-dark: #212121;
+    --harvard-red: #A51C30;
+    --light-grey: #F2F2F2;
+    --white: white;
+}
+
+body { color: var(--moon-dark); }

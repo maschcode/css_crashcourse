@@ -1,0 +1,127 @@
+/* ---------------------------------------------------------- */
+/* #4 - Infocard - feed block entry with 2 persons 
+/* ---------------------------------------------------------- */
+/* - layout
+/* ---------------------------------------------------------- */
+
+
+.txt-bold { font-weight: bold ;}
+
+
+/* --------------------------------------------- */
+/* 2.Person Image Area                           */
+/* --------------------------------------------- */
+
+
+/* basic 2 person image size */
+.img-2per-size  {
+
+    width: 250px;
+    height: 250px;
+
+    padding-right: 1.5em;
+}
+
+
+
+
+/* abb style */
+span.abb-img {
+    font-weight: bold;
+}
+
+/* style figure not to be big block */
+/* & bring next each other */
+figure { margin: 0; display: inline-block; }
+
+/* figcaption size */
+figcaption { font-size: .8em; margin-top: -.5em; padding-bottom: .5em; }
+
+
+
+
+
+.h1-sec { 
+
+    margin:0;
+    font-size: 1em;
+    padding-bottom: 1em;
+    color: var(--harvard-red);
+}
+
+
+/* text content size */
+.txt-i4-size { 
+    font-size: .9em;
+    line-height: 1.5em;
+} 
+
+/* section datestamp style */
+.sec-date { 
+
+   float:right;
+   font-weight: bold;
+   font-size: .9em;
+   padding-left:1em;
+   padding-bottom: 1em;
+   color: var(--harvard-red);
+}
+
+
+
+table.sec-table { 
+    width: 450px;
+    border: 1px dotted var(--moon-dark);
+    padding: .3em;
+    margin-top:1em;
+    margin-left:1.3em;
+    background-color: lightsteelblue;
+}
+
+table.sec-table th { text-align: left; padding-bottom: 1em; }
+
+table.sec-table tr:nth-child(2) td { 
+    
+    font-weight: bold;
+    text-decoration: underline;
+
+    padding-bottom: .3em;
+
+}
+
+
+.float-right { float:right; }
+
+
+
+
+
+/* --------------------------------------------- */
+/* Media Queries                                 */
+/* --------------------------------------------- */
+
+/* bring infobox 4 in 1.row - layout , close float */
+/* if closed float content goes under img */
+/* scrollbar -17px in width , 801px */
+@media (min-width: 784px) {
+
+    div.img-2per-contentbox { 
+        
+        /* div image 2 person */ 
+        float:left;
+        
+    }
+}
+
+@media (max-width: 1300px) {
+
+    .img-2per-size {
+
+        width: 160px;
+        height: 160px;
+    }
+}
+
+
+
+

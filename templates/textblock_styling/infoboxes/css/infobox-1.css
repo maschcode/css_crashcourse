@@ -1,0 +1,98 @@
+/* ---------------------------------------------------------- */
+/* #1 - Infocard - CSS Settings
+/* ---------------------------------------------------------- */
+/* - table structure , float , styling , txt , pos
+/* ---------------------------------------------------------- */
+
+
+
+/* lineheight in 1st tr in table for better 2 line float */
+table.style-infobox tr:first-child { line-height: 2em; }    
+
+/* ---------------------- */
+/* table , 1.row          */
+/* ---------------------- */
+
+/* header - title  */
+.style-i1-table-header {
+    font-weight: bold;
+}
+
+
+/* img etiket ( float ) */
+.img-etiket-size { 
+
+    width: auto;
+    height: 1.5em;
+    padding-right:.6em;
+    padding-left: .1em;
+    padding-top: .3em;
+    float:left;
+}
+
+
+/* header - date */
+.pos-i1-header-date { 
+
+    text-align: right;
+    vertical-align: top;
+    font-size: .8em;
+    font-weight: bold;
+    color: var(--harvard-red);
+}
+
+
+
+
+
+
+/* ---------------------- */
+/* table , 2.row          */
+/* ---------------------- */
+
+/* txt pos */
+.style-i1-txt {
+
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+
+    font-size: .9em;
+}
+
+
+
+/* ---------------------- */
+/* table , 3.row          */
+/* ---------------------- */
+
+/* pos of button - readmore */
+.pos-readmore {  text-align: right; }
+
+      
+/* styling , pos of button - readmore */
+.div-readmore { 
+
+    display: inline-block;
+  
+    padding-top: .3em;
+    padding-bottom: .3em;
+    padding-left: .8em;
+    padding-right: 1.1em;
+
+
+    background-color: var(--harvard-red);
+    color:var(--white);
+    opacity: 0.9;
+
+    font-style: italic;
+    font-size: .8em;
+
+}
+
+.div-readmore:hover {
+
+    background-color: var(--moon-dark);
+    transition: 1ms;
+}
+
+
