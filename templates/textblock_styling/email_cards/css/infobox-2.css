@@ -1,0 +1,161 @@
+/* ---------------------------------------------------------- */
+/* #2 - E-Mail Card Info
+/* ---------------------------------------------------------- */
+/* - table structure , float , styling , txt , pos
+/* ---------------------------------------------------------- */
+
+
+
+
+/* --------------------------------------------- */
+/*  #2 - Emai Card Styling
+/* --------------------------------------------- */
+
+
+/* --------------------------------------- */
+/* #1 - Email Card Infobox - Pos Size      */
+/* --------------------------------------- */
+
+.size-email-card-2 { 
+    
+    width: 520px;
+    margin-left:auto;
+    margin-right:auto; 
+}
+
+
+/* --------------------------------------- */
+/* RED HEADER | 1.DIV                      */
+/* --------------------------------------- */
+
+/* special geo form */
+.email-main-header-2 { 
+ 
+    height: 50px;
+    width: 300px; 
+    
+    border-right: 100px solid transparent; 
+    height: 0; 
+    border-bottom: 50px solid var(--harvard-red); 
+}
+
+/* contect text position style */
+.style-main-header-2-contanct {
+
+      /* font styling */
+      color:white;
+      font-size: 1.2em;
+      padding-left:10px; padding-top:10px;
+}
+
+
+
+/* img of email person little bit bigger */
+.img-email-person2 { 
+
+    width: 130px;
+    height: 130px;
+
+    border-radius: 50%;
+    border: 3px solid white;  
+}
+
+
+
+/* --------------------------------------- */
+/* styling email data box  | 2.DIV         */
+/* --------------------------------------- */
+
+.email-content2 { padding: .3em; }
+
+    
+
+/* --------------------------------------- */
+/* grid layout | 2.DIV - 3.DIV             */
+/* --------------------------------------- */
+
+.grid-email-infocard-2 {
+
+    display: grid;
+    grid: auto / 1fr 2fr .3fr;
+
+    background-color: var(--light2-grey);
+}
+
+
+/* all header email element top distance */
+.grid-email-infocard-2 > div {  margin-top:10px; }
+
+
+/* only image field more left space */
+.grid-email-infocard-2 > div:first-child img { margin-left:10px; }
+
+
+
+
+/* email contact data pos */
+.grid-email-infocard-2 > div:nth-child(2) , 
+  .grid-email-infocard-2 > div:nth-child(3) {
+    margin-top: .8em;
+    
+}
+
+.grid-email-infocard-2 > div:nth-child(2) { 
+
+    padding-left:1em;
+}
+
+.grid-email-infocard-2 > div:nth-child(3) {
+
+    padding-left:.2em;
+}
+
+
+
+/* --------------------------------------- */
+/* contact data | 4.DIV                    */
+/* --------------------------------------- */
+
+
+
+.grid-email-data-2 {
+ 
+    display: grid;
+    grid: auto / 1fr;
+
+   
+    margin-top: 1em;
+    margin-bottom: .5em;
+
+    font-size: .8em;
+    font-weight: bold;
+}
+
+.grid-email-data-2 > div {
+
+   /* style email contact data list grey */ 
+   background-color: var(--light2-grey);
+
+   display: flex;
+   justify-content: left;
+   align-items: center;  
+}
+
+
+/* icon div width */
+.grid-email-data-2 > div div:first-child { width: 30px; }
+
+
+/* bring elements next each other */
+.grid-email-data-2 > div div {  display: inline-block;  }
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,186 @@
+/* ---------------------------------------------------------- */
+/* MAIN - CSS Styles
+/* ---------------------------------------------------------- */
+/* - grid layouts 
+/* - basic table style e.g infobox header etc. 
+/* - text style & positions
+/* ---------------------------------------------------------- */
+
+
+
+
+
+/* ---------------------------------------------------------- */
+/* Main - Grid Layout 
+/* ---------------------------------------------------------- */
+/* - pos the basic email infoboxes layout in 2.cols 
+/* - proto gridlayout for prototyp box
+/* ---------------------------------------------------------- */
+
+
+/* ------------------------------------- */
+/*  Main - Grid Layout                   */
+/* ------------------------------------- */
+
+#grid-main {
+
+    display: grid;
+    grid: auto / 1fr 1fr;
+    gap: 1em;
+  
+}
+
+#grid-main > div {
+
+    width: 100%;
+
+    /* content pos */
+    vertical-align: top;
+    margin-bottom: 2em;
+}
+
+
+/* ------------------------------------- */
+/*  Mini Prototyp - Grid Layout          */
+/* ------------------------------------- */
+
+/* grid prototyp layout 2.cols */
+#grid-proto {
+
+    display: grid;
+    grid: 200px / 1fr 1fr;
+    padding:.5em;
+}
+
+
+/* 1.col , 1.div  */
+/* ( bring content center middle ) */
+/* ( flex col for vertical layout ) */
+#grid-proto > div:first-child {
+ 
+    /* teq. to put in middle */
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    /* layout column style under */
+    flex-direction: column;
+
+   
+}
+
+/* 1.col , 1.div  */
+/* distanc between divs smaller */
+#grid-proto > div:first-child div {
+
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-weight: bold;
+
+    padding:.1em;
+}
+
+/* 2.col , 2.div  */
+/* ( style pos for img prototyp ) */
+#grid-proto > div:nth-child(2) {
+
+    /* teq. to put in middle right */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+
+
+
+
+
+/* ---------------------------------------------------------- */
+/* Styling - E-Mail Infoboxes  
+/* ---------------------------------------------------------- */
+/* - basic styling divs in email - infoboxes
+/* ---------------------------------------------------------- */
+
+
+
+
+
+/* ------------------------------------- */
+/* Title - E-Mail Infobox | 1. DIV       */
+/* ------------------------------------- */
+
+#grid-main > div > div:first-child {
+
+    background-color: var(--moon-dark);
+    color: var(--skin-brown);
+
+    padding:.5em;
+    font-size: .9em;
+}
+
+
+/* -------------------------------------------- */
+/* Prototyp Box - E-Mail Infobox | 2. DIV       */
+/* -------------------------------------------- */
+
+#grid-main > div > div:nth-child(2) {
+
+    height: 200px;
+    background-color: var(--skin-brown);
+
+    padding-top:.5em;
+    margin-top: .5em;
+
+    font-size: .9em;
+}  
+
+
+/* ---------------------------- */
+/* Prototyp img def. sizes      */
+/* ---------------------------- */
+.img-size-proto-basic {
+
+    width: 12em;
+    height: auto;
+}
+
+.img-size-proto-big-width {
+
+    width: auto;
+    height: 10em;
+}
+
+
+
+
+/* -------------------------------------------- */
+/* Solution Box - E-Mail Infobox | 3. DIV       */
+/* -------------------------------------------- */
+
+#grid-main > div > div:nth-child(3) {
+
+    height: 50px;
+
+    padding:.5em;
+
+    /* styling */
+    font-size: .9em;
+    
+}
+
+
+
+
+/* -------------------------------------------- */
+/* E-Mail Template - E-Mail Infobox | 4. DIV    */
+/* -------------------------------------------- */
+
+
+.email-infobox { 
+   
+    /* dont overlay parent div */
+    margin: .3em;
+
+    /* styling */ 
+    background-color: var(--light-grey);
+    border: 1px solid var(--moon-dark);
+}
+

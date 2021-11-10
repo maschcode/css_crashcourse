@@ -1,0 +1,217 @@
+/* ---------------------------------------------------------- */
+/* #1 - E-Mail Card Info
+/* ---------------------------------------------------------- */
+/* - table structure , float , styling , txt , pos
+/* ---------------------------------------------------------- */
+
+
+/* --------------------------------------- */
+/* #1 - Email Card Infobox - Pos Size      */
+/* --------------------------------------- */
+
+.size-email-card-1 { 
+    
+    width: 400px;
+    margin-left:auto;
+    margin-right:auto; 
+}
+
+
+ 
+ 
+/* --------------------------------------- */
+/* RED HEADER | 1.DIV                      */
+/* --------------------------------------- */
+
+.email-main-header-1 { 
+ 
+    height: 90px;
+
+    /* styling */
+    background-color: var(--harvard-red);
+    color:var(--light-grey);
+
+    /* for easier pos styling */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* pos */
+    padding: .3em; 
+}
+
+
+/* --------------------------------------- */
+/* styling pos red header                  */
+/* --------------------------------------- */
+ 
+ 
+.pos-contact { padding-left: 140px; padding-top:10px; }
+ 
+.pos-email { padding-right: 10px; padding-top:10px; }
+
+.img-email { width: 1.8em; height: auto; }
+
+
+ 
+
+/* --------------------------------------- */
+/* img person - #1 - Email Card            */
+/* --------------------------------------- */
+.img-email-person { 
+
+    width: 100px;
+    height: 100px;
+
+    /* make circle template */ 
+    border-radius: 50%;
+    border: 3px solid white;
+ 
+    /* because should go over gray area */
+    position: absolute;
+ 
+    margin-top:15px;
+    margin-left:10px;   
+}
+
+
+ 
+
+
+/* --------------------------------------- */
+/* styling email data box                  */
+/* --------------------------------------- */
+
+.email-content { padding:1em; }
+ 
+ 
+
+/* --------------------------------------- */
+/* text styling in email data box          */
+/* --------------------------------------- */
+ 
+.email-info { font-size: .8em; }
+
+
+
+/* --------------------------------------- */
+/* mini icon size in email data box        */
+/* --------------------------------------- */
+
+.img-mini-email-icon { 
+ 
+    width: 1em;
+    height: 1em;
+    padding-top: .4em;
+}
+
+
+ 
+ 
+
+ 
+ 
+/* --------------------------------------- */
+/* GRAY HEADER | 2.DIV                     */
+/* --------------------------------------- */
+  
+.email-sub-header-1 {
+ 
+     height: 30px;
+    
+     background-color: gray;
+     color:white;
+     text-align: center;
+}
+ 
+
+.img-arrow-down-size {
+ 
+    width: .3em;
+    height: auto;
+}
+
+ 
+
+ 
+ 
+/* --------------------------------------- */
+/* Content E-Mail Data List | 3.DIV        */
+/* --------------------------------------- */
+ 
+
+.email-content-1 { 
+    background-color: var(--light-grey);
+    padding: 1em;
+}
+
+ 
+/* --------------------------------------- */
+/* email data gridlayout 1.col             */
+/* --------------------------------------- */    
+
+.grid-email-data {
+ 
+     display: grid;
+     grid: auto / 1fr;
+ 
+     gap: .5em;
+ 
+     margin-top: 1em;
+     margin-bottom: 1.2em;
+ 
+     font-size: .8em;
+     font-weight: bold;
+}
+ 
+.grid-email-data > div {
+ 
+    /* style email contact data list grey */ 
+    background-color: var(--light2-grey);
+
+    display: flex;
+    justify-content: left;
+    align-items: center;  
+}
+
+
+/* icon div width */
+.grid-email-data > div div:first-child { width: 30px; }
+
+
+/* bring elements next each other */
+.grid-email-data > div div {  display: inline-block;  }
+ 
+     
+
+ 
+/* --------------------------------------- */
+/* Adressbox of person  | 4.DIV            */
+/* --------------------------------------- */
+
+.adressbox-color { color:var(--harvard-red); }
+
+    
+
+    
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    
+ 
+ 
+ 
+ 
+ 
+ 
