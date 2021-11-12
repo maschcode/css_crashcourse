@@ -1,0 +1,255 @@
+/* ---------------------------------------------------------- */
+/* #1 - tablebox 
+/* ---------------------------------------------------------- */
+/* - table structure , float , styling , txt , pos
+/* ---------------------------------------------------------- */
+
+
+
+/* -------------------------------------------- */
+/*  Table Infobox Pos Style | 4. DIV            */
+/* -------------------------------------------- */
+
+/* table in infobox centered */
+div.table-3-content-pos {
+
+    margin-left:3em;
+    margin-right: 3em;
+}
+
+
+
+/* --------------------------------------- */
+/* Basic Table Style                       */
+/* --------------------------------------- */
+
+table.sell-table { 
+
+    text-align: center;
+
+    background-color: var(--light2-grey);
+
+    
+
+    
+
+    /* 16px space between cols , 0px in rows */
+    border-spacing: 12px 0px
+
+}
+
+table.sell-table tr:nth-child(1) td { width: 400px;}
+
+
+table.sell-table tr { background-color: white; }
+
+/* ---------------------------------------  */
+/* 1.TR , LAST.TR |                        */
+/* --------------------------------------- */
+
+/* 1.tr - basic , premium , vip */
+table.sell-table tr:first-child td  { 
+
+    padding: 22px;
+    font-size: 1.2em;
+    font-weight: bold;  
+}
+
+/* last.tr - purchase buttons */
+table.sell-table tr:last-child td { 
+
+    font-weight: bold;
+    height: 80px;
+
+    padding-top: 22px;
+    padding-bottom: 22px;   
+}
+
+/* bring div button centered in td */
+table.sell-table tr:last-child td div { 
+
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+
+/* --------------------------------------- */
+/* 1.TR , LAST.TR | Line Styling           */
+/* --------------------------------------- */
+
+/* 1tr, 1.td */
+table.sell-table tr:first-child td:nth-child(1) { 
+    
+    border-top: 5px solid var(--gras-green);
+    color: var(--gras-green);
+}
+
+/* 1tr , 2.td */
+table.sell-table tr:first-child td:nth-child(2) { 
+    
+    border-top: 5px solid var(--light-lila);
+    color:  var(--light-lila);
+}
+
+/* 1tr , 3.td */
+table.sell-table tr:first-child td:nth-child(3) { 
+    
+    border-top: 5px solid var(--deep-blue);
+    color:  var(--deep-blue);
+}
+
+
+/* last tr , 1.td */
+table.sell-table tr:last-child td:nth-child(1) { 
+    
+    border-bottom: 5px solid var(--gras-green);
+}
+/* last tr , 2.td */
+table.sell-table tr:last-child td:nth-child(2) { 
+    
+    border-bottom: 5px solid var(--light-lila);
+}
+/* lat tr , 3. td */
+table.sell-table tr:last-child td:nth-child(3) { 
+    
+    border-bottom: 5px solid var(--deep-blue);
+}
+
+
+
+
+
+
+
+/* ---------------------------------------  */
+/* 2.TR  | Price Boxes                      */
+/* --------------------------------------- */
+
+
+
+.price-box { 
+
+    padding:16px;
+    font-weight: bold;
+    color:white;
+}
+
+.bg-green { background-color: var(--gras-green); }
+
+.bg-lila  { background-color:  var(--light-lila);}
+
+.bg-blue { background-color: var(--deep-blue); }
+
+
+
+
+
+
+/* ---------------------------------------  */
+/* 3.TR  | Services Boxes                  */
+/* --------------------------------------- */
+
+/* more bottom distance to services */
+table.sell-table tr:nth-child(3) td { 
+    
+    padding-top: 28px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+
+    /* special cool services font */
+    font-family: 'Brush Script MT', cursive;
+    font-weight: bold;
+
+}
+
+table.sell-table tr:nth-child( 4 ) td , 
+table.sell-table tr:nth-child( 5 ) td ,
+table.sell-table tr:nth-child( 6 ) td , 
+table.sell-table tr:nth-child( 7 ) td , 
+table.sell-table tr:nth-child( 8 ) td {  
+    
+    /* special cool services font */
+    font-family: 'Brush Script MT', cursive;
+    font-weight: bold;
+    padding:12px;
+
+}
+
+
+/* diffrent color light stripes */
+table.sell-table tr:nth-child( 2n + 4 ) td {
+
+    background-color: var(--light-grey);   
+}
+
+
+
+
+
+/* ---------------------------------------------- */
+/* Button                                         */
+/* ---------------------------------------------- */
+
+.purchase-button { 
+
+    /* only div as link & not full block element */
+    display: inline-block;
+
+    width: 100px;
+    padding:8px;
+
+    border-radius: 5px;
+}
+
+.line-green { border: 3px solid var(--gras-green); color:var(--gras-green); }
+
+.line-lila { border: 3px solid var(--light-lila); color:var(--light-lila); }
+
+.line-blue { border: 3px solid var(--deep-blue); color:var(--deep-blue); }
+
+
+
+
+
+
+
+
+/* ---------------------------------------- */
+/* Link Style 
+/* ---------------------------------------- */
+
+a:visited { color:black; }
+
+a { text-decoration: none; }
+
+
+/* if in class is purchase-button */
+
+a div[class~="line-green"]:hover {
+
+    background-color: var(--gras-green);
+    color:var(--white);
+}
+
+a div[class~="line-lila"]:hover {
+
+    background-color: var(--light-lila);
+    color:var(--white);
+}
+
+
+a div[class~="line-blue"]:hover {
+
+    background-color: var(--deep-blue);
+    color:var(--white);
+}
+
+
+
+
+
+
+
+

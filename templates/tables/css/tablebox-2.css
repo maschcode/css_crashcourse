@@ -1,0 +1,407 @@
+/* ---------------------------------------------------------- */
+/* #1 - tablebox 
+/* ---------------------------------------------------------- */
+/* - table structure , float , styling , txt , pos
+/* ---------------------------------------------------------- */
+
+
+
+/* -------------------------------------------- */
+/*  Table Infobox Pos Style | 4. DIV            */
+/* -------------------------------------------- */
+
+/* table in infobox centered */
+div.table-1-content-pos {
+
+    margin-left:1em;
+    margin-right: 1em;
+}
+
+
+
+/* --------------------------------------- */
+/* Domain Header Style                     */
+/* --------------------------------------- */
+
+div.header-domain { 
+
+    background-color: var(--dark-sea-blue);
+    color:white;
+
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    padding-right: 32px;
+
+
+    /*space bottom*/
+    margin-bottom: 1em;
+    
+   
+    /* flexlayout for easy outsite style */
+    display: flex;
+    justify-content: space-between;
+
+    /* content middle */
+    align-items: center;
+
+}
+
+/* Domain Header Title */
+.header-domain-title {  
+   
+    font-size: 1.5em;
+    
+}
+
+
+
+
+/* --------------------------------------- */
+/* status color boxes style                */
+/* --------------------------------------- */
+
+/* for all status inside space style */
+/* pos inside status */
+.pos-i-status , .manage-box { 
+
+    padding: .5em;
+    border-radius: 2px;
+    width: 100px;
+    text-align: center;
+
+    color:white;
+    font-weight: bold;
+
+}
+
+/* action manage - box */
+.manage-box {
+
+    background-color: var(--gras-green);
+    border-bottom: 5px solid var(--moon-dark);
+
+}
+
+
+.style-status-new { background-color: var(--css-blue); }
+
+.style-status-buy { background-color: var(--yellow-green); }
+
+.style-status-reserved { background-color: var(--orange-dark); }    
+    
+
+.style-status-sold { background-color: var(--red-light); }    
+
+
+
+
+/* --------------------------------------- */
+/* Basic Table Style                       */
+/* --------------------------------------- */
+
+
+/* table more inside */
+.table-pos-inside { margin-left:1em; margin-right:1em; }
+
+.style-table-2 {
+     
+
+    width: 100%;
+
+    /* content more inside*/
+   
+
+
+    /* basic font size of table */
+    font-size: 1em;
+
+    /* let table cell bring togehter */
+    border-collapse: collapse; 
+
+}
+
+
+/* default table cell inside spaice */
+.style-table-2 tr td {  padding: 16px; }
+
+
+/* 1.row ot table bold */
+/* 1.col vertical line -> id */
+.style-table-2 tr:first-child , 
+ .style-table-2 tr td:first-child { font-weight: bold; }
+ 
+
+
+ /* 1.row , 2.col -> domains */
+.style-table-2 tr:nth-child( n + 2 ) td:nth-child(2) {
+
+    color: var(--deep-blue);
+}
+ 
+
+/* status , action col - centered */
+.style-table-2 tr:nth-child(n + 1 ) td:nth-child(4) , 
+  .style-table-2 tr:nth-child(n + 1 ) td:nth-child(6) 
+{
+
+    /* text content center */
+    text-align: center;
+
+    /* div content center */
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* 1.row bottom line thicker */
+.style-table-2 tr:first-child { border-bottom: 3px solid var(--light2-grey);}
+
+/* till 2.row all tr top border line */
+.style-table-2 tr:nth-child(n + 2 ) { border-top: 1px solid var(--light2-grey); }
+
+
+/* every second row bgcolor */
+.style-table-2 tr:nth-child(2n) { 
+
+    background-color: var(--light-grey);
+}
+
+
+
+
+
+
+
+
+/* ---------------------------------------- */
+/* Link Style 
+/* ---------------------------------------- */
+
+a { text-decoration: none; }
+
+/* if in class is manage-box */
+a div[class~="manage-box"]:hover {
+
+    background-color: var(--light2-grey);
+    color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.style-tbl-1-header {  background-color: var(--moon-dark); }
+
+.style-title-bu { 
+    
+    background-color: var(--harvard-red);
+    color:white;
+    font-weight: bold;
+}
+
+.style-title-bu-sub { 
+
+    background-color: var(--light-grey);
+    font-weight: bold;    
+}
+
+
+
+
+/* make first row start,end cols curved as table */
+.style-tbl-1-header td:first-child {  border-radius: 1em 0px 0px 0px; }
+
+/* make last row start,end cols curved as table */   
+.style-tbl-1-header td:nth-child(2) {  border-radius: 0px 1em 0px 0px; }
+
+
+
+/* timetable year date and logo text content right */
+.style-table-1 tr:first-child td:nth-child(2) { text-align: right; }
+    
+    
+/* bu logo img */
+.img-bu-logo { 
+
+    width: auto;
+    height: 1.5em;
+
+    vertical-align: middle;
+    padding-bottom: .1em;
+    padding-left: .5em;
+}
+
+
+
+
+
+/* --------------------------------------- */
+/* Bubble Box Style                        */
+/* --------------------------------------- */
+
+/* basic bubble template */
+.style-bubble { 
+
+    display: inline-block;
+
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 16px;
+}
+
+ /* freetime - bubble */
+.style-free { 
+    
+    background-color: var(--moon-dark);
+    color:var(--white);
+}
+
+/* date - bubble */
+.style-date { 
+
+    background-color: gray;
+    color:var(--white);
+}
+
+
+/* timestamp - bubble */
+.style-time-stamp {
+    background-color: var(--moon-dark);
+    color:var(--white);
+    opacity: 0.6;
+}
+
+/* time - bubble */
+.style-time { 
+
+    background-color: var(--light2-grey);
+    color:black;
+}
+
+/* break - bubble */
+.style-break {
+
+    background-color: var(--yellow-green);
+    color:black;
+    text-align: center;
+
+}
+
+
+
+
+/* --------------------------------------- */
+/* Free Time - Table | 2.row               */
+/* --------------------------------------- */
+
+
+/* smaller content - tr */
+.style-table-1 tr:nth-child(2) {
+
+    background-color: var(--light-grey);
+    height: 40px;
+    font-size: .7em;    
+}
+
+/* smaller content - td*/
+.style-table-1 tr:nth-child(2) td {
+
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+
+
+
+
+
+
+
+
+/* --------------------------------------- */
+/* Grey Line - Table | 3.row               */
+/* --------------------------------------- */
+
+.style-tbl-1-header-line td { 
+
+    background-color: gray;
+    height: 15px;
+}
+
+
+
+ 
+
+
+
+
+
+
+/* --------------------------------------- */
+/* Header Cols - Table | 4.row             */
+/* --------------------------------------- */
+
+/* individual topic space top,bottom */
+.style-table-1 tr:nth-child(4) td {
+
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    font-weight:bold;
+ }
+
+ 
+ /* time - col - vertical line */
+ .style-table-1 tr:nth-child(n + 4) td:first-child {
+     
+     padding-left:.5em;
+ }
+ 
+ /* sunday - col - vertical line */
+ .style-table-1 tr:nth-child(n + 4) td:last-child  {
+     
+     padding-right:.5em;
+ }
+ 
+ 
+ /* table content width space */
+ .style-table-1 tr:nth-child(n + 4) td:first-child div {
+     
+     width: 91px;
+ }
+
+
+
+
+/* all timetable values same width */
+.style-table-1 tr:nth-child(n + 4) td:nth-child( n + 2 ) div { width: 100px; }
+
+/* distance between time col and monday col */
+.style-table-1 tr:nth-child(n + 4) td:nth-child(n + 2) { padding-left:1.2em;}
+
+/* till 5.row space between row by row */
+.style-table-1 tr:nth-child(n + 5) td { padding-bottom: 1em;}
+
+
+
+
+

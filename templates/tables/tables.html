@@ -1,0 +1,1501 @@
+
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <!-- --------------------------------------------------- -->
+    <!-- FOR MOBILE VIEW DEVICES                             -->
+    <!-- --------------------------------------------------- -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- --------------------------------------------------- -->
+    <!-- FAVICONS                                            -->
+    <!-- --------------------------------------------------- -->
+
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="https://drive.google.com/uc?id=1gFhaQNu45nbh9wBItKEP231P6SFbX_Qf&export">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://drive.google.com/uc?id=1M36Ua_pbN3CztVrFdrRQv3td8XDn5eTk&export">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://drive.google.com/uc?id=15WtsxtC8U__g2gDAsaEZga__oCeqQvCP&export">
+    
+
+    <!-- --------------------------------------------------- -->
+    <!-- CSS BINDINGS                                        -->
+    <!-- --------------------------------------------------- -->
+    
+    
+    <!-- CSS :root,body ( basics in document ) -->
+    <link rel="stylesheet" href="css/root-body.css">
+
+
+    <!-- CSS HEADER -->
+    <link rel="stylesheet" href="css/header.css">
+    
+
+    <!-- CSS MAIN ( basics e.g main grid ) -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- CSS tablebox 1  -->
+    <link rel="stylesheet" href="css/tablebox-1.css">
+
+    <!-- CSS tablebox 2  -->
+    <link rel="stylesheet" href="css/tablebox-2.css">
+
+    <!-- CSS tablebox 3  -->
+    <link rel="stylesheet" href="css/tablebox-3.css">
+
+    <!-- CSS tablebox 4  -->
+    <link rel="stylesheet" href="css/tablebox-4.css">
+
+
+    <!-- CSS Media Queries  -->
+    
+
+
+    <title>CSS - Table Layouts</title>
+
+</head> 
+
+
+
+
+<body>
+
+    <!-- ----------------------------------------------------------------- -->
+    <!-- HEADER ( information about templates  )                           -->
+    <!-- ----------------------------------------------------------------- -->
+    
+    <header title="Information about Template">
+
+        <!-- ------------------------------------------------------------- -->
+        <!-- Title - Infobox                                               -->
+        <!-- ------------------------------------------------------------- -->
+    
+        <h1 class="header-title">
+            <u>Table Layouts:</u> Different Art of Table Arts
+        </h1>
+
+        <!-- ------------------------------------------------------------- -->
+        <!-- Text - Infobox                                           -->
+        <!-- ------------------------------------------------------------- -->
+        <div class="header-infobox">
+        
+            <span class="header-topics">🔨 How to test it ?</span>
+            <p class="p-pos-text-topics"> 
+                Only for desktop view. It is Standard Web Responsive but not on the
+                perfect way, because its only for impression. The way to do it
+                on the perfect responsive way could be on every person a little
+                bit different. It depends on the art of liking moving
+                content on smaller devices.
+            </p> 
+            
+            
+            <span class="header-topics">⚙️ Features / Functions </span>
+            <ul>
+                <li>grid , flex & float techniques</li>
+                <li>images sources will be loaded from google drive cloud</li>
+            </ul>
+
+        </div>
+
+
+    </header>
+
+
+    <!-- ----------------------------------------------------------------- -->
+    <!-- MAIN ( grid layout for email infocards  )                         -->
+    <!-- ( basic 3.col layout ) -->
+    <!-- ----------------------------------------------------------------- -->
+
+    <main id="grid-main" title="View area of E-Mail Info Cards">
+
+       
+       
+       
+       
+        <!-- ------------------------------------ -->
+        <!-- #1 - Table Layout                    -->
+        <!-- ------------------------------------ -->
+        <div>
+            
+            <!-- ---------------------- -->
+            <!-- Header Infobox         -->
+            <!-- ---------------------- -->
+            <div class="txt-bold">#1 - Timetable ( University ) </div>
+
+
+            <!-- ---------------------- -->
+            <!-- Prototyp Infobox       -->
+            <!-- ---------------------- -->
+            <div id="grid-proto">
+
+                
+                <!-- ---------------------- -->
+                <!-- Proto/Real Text        -->
+                <!-- ---------------------- -->
+                <div>
+
+                    <div>Prototyp ➜ </div>
+                    <div>Reality </div>
+                    <div class="trans-90deg">➜ </div>
+                    
+                    <!--<div class="trans-90deg"> ➜ </div>-->
+
+
+                </div>
+
+                <!-- ---------------------- -->
+                <!-- Prototyp image         -->
+                <!-- ---------------------- -->
+                <div>
+                   <img src="https://drive.google.com/uc?id=17iEKTplS7fzyTTFbU-sFH0slnPvpqgV9&export" class="img-size-proto-basic" alt="img">
+                </div>
+
+            </div>
+
+            <!-- ---------------------- -->
+            <!-- Solution Infobox       -->
+            <!-- ---------------------- --> 
+            <div>
+
+                <span class="txt-bold">Solution:</span>
+                <span class="txt-cursiv">grid , div , float </span>
+
+            </div>
+
+
+            <!-- ---------------------- -->
+            <!-- #1 - Tablelayout     -->
+            <!-- ---------------------- -->
+            <div class="table-1-content-pos">
+
+            
+
+                <table class="style-table-1">
+
+                    <!-- -------------------- -->
+                    <!-- Table Header         -->
+                    <!-- -------------------- -->
+                    <tr class="style-tbl-1-header">
+                        
+                        <td colspan="6">
+                            
+                            <div class="style-bubble style-title-bu">Boston University </div>
+                            
+                            <div class="style-bubble style-title-bu-sub">Computer Science ( MA )</div>
+                        
+                        </td>
+                        
+                        
+                            <td colspan="2">
+                                
+                                <div class="style-bubble style-title-bu-sub"> 2022/23</div>
+                                <img src="https://drive.google.com/uc?id=1tFsgPSISCScBW9LSeWMcoAqgLvM9zodt&export" class="img-bu-logo" alt="img">
+
+                            </td>
+                    </tr>
+
+                    <!-- ----------------------- -->
+                    <!-- Sub Table Header        -->
+                    <!-- ---------------------- --->
+                    <tr>
+                        <td colspan="8"  >
+                           
+                            
+                            <div class="style-bubble style-free"> Free Time</div>
+                        
+                    
+                            <div class="style-bubble style-date">01.03 - 07.03</div>
+
+                            <div class="style-bubble style-date">01.05 - 02.05</div>
+
+                            <div class="style-bubble style-date">10.08 - 03.09</div>
+
+                            <div class="style-bubble style-date">10.10 </div>
+                                
+                            <div class="style-bubble style-date">22.12 - 08.01.22</div>
+
+                         
+                        
+                        </td>
+
+                            
+                    </tr>
+
+
+                    <!-- ----------------------- -->
+                    <!-- Sub Table Line          -->
+                    <!-- ---------------------- --->
+                    <tr class="style-tbl-1-header-line">
+                        <td colspan="8"></td>
+                    </tr>
+
+
+                    <!-- ----------------------- -->
+                    <!-- Main Content            -->
+                    <!-- ---------------------- --->
+                    
+                    <!-- 1.Row -->
+                    <tr>
+
+                        <td>
+                            <div class="style-bubble style-time">Time ⌛</div>
+                            
+                        </td>
+                        
+                        <td>
+                        
+                            <div class="style-bubble style-title-bu">Monday</div>
+                        
+                        </td>
+                        <td>
+
+                            <div class="style-bubble style-title-bu">Tuesday</div>
+
+                        </td>
+
+                        <td>
+
+                            <div class="style-bubble style-title-bu">Wednesday</div>
+
+                        </td>
+
+                        <td>
+
+                            <div class="style-bubble style-title-bu">Thursday</div>
+                        
+                        </td>
+
+                        <td>
+
+                            <div class="style-bubble style-title-bu">Friday</div>
+                        
+                        </td>
+
+                        <td>
+
+                            <div class="style-bubble style-title-bu">Saturday</div>
+                        
+                        </td>
+
+                        <td>
+
+                            <div class="style-bubble style-title-bu">Sunday</div>
+                        
+                        </td>
+
+                    </tr>
+
+                    <!-- 2.Row -->
+                    <tr>
+
+                        <td>
+                        
+                            <div class="style-bubble style-time-stamp">8:00 - 9:00</div>
+                                                
+                        </td>
+                        <td>
+                        
+                            <div class="style-bubble style-time">AI </div>    
+                        
+                        </td>
+                        <td>
+                            
+                            <div class="style-bubble style-time">Database</div>   
+                        
+                        </td>
+                        <td>
+                            
+                            <div class="style-bubble style-time">Analytics</div>   
+                        
+                        </td>
+                        <td>
+                            
+                            <div class="style-bubble style-time">Operation</div>   
+                        
+                        </td>
+                        <td>
+                            
+                            <div class="style-bubble style-time">Programming </div>   
+                        
+                        </td>
+                        <td>
+                            
+                            <div class="style-bubble style-time">Violin</div>   
+                        
+                        </td>
+                        <td>
+                            
+                            <div class="style-bubble style-time">Running</div>   
+                        
+                        </td>
+
+                    </tr>
+
+                    <!-- 3.Row -->
+                    <tr>
+
+                        <td>
+                        
+                            <div class="style-bubble style-time-stamp">9:00 - 10:00</div>
+                                                
+                        </td>
+                        <td>
+                        
+                            <div class="style-bubble style-time">AI </div>    
+                        
+                        </td>
+                        <td>
+                        
+                            <div class="style-bubble style-time">Database</div>    
+                        
+                        </td>
+                        <td>
+                        
+                            <div class="style-bubble style-time">Analytics</div>    
+                        
+                        </td>
+                        <td>
+                        
+                            <div class="style-bubble style-time">Operation</div>    
+                        
+                        </td>
+                        <td>
+                        
+                            <div class="style-bubble style-time">Programming</div>    
+                        
+                        </td>
+                        <td>
+                        
+                            <div class="style-bubble style-time">Violin</div>    
+                        
+                        </td>
+                        <td>
+                        
+                            <div class="style-bubble style-time">Running</div>    
+                        
+                        </td>
+                        
+                    </tr>
+
+
+                    <!-- 4.Row -->
+                    <tr>
+
+                        <td>
+                        
+                            <div class="style-bubble style-time-stamp">10:00 - 11:00</div>
+                                                
+                        </td>
+                        <td>
+                        
+                            <div class="style-bubble style-time">DS - Tools</div>    
+                        
+                        </td>
+                        <td>
+                        
+                            <div class="style-bubble style-time">Security</div>    
+                        
+                        </td>
+                        <td>
+                        
+                            <div class="style-bubble style-time">Algebra</div>    
+                        
+                        </td>
+                        <td>
+                        
+                            <div class="style-bubble style-time">Statistic</div>    
+                        
+                        </td>
+                        <td>
+                        
+                            <div class="style-bubble style-time">S-Architecture</div>    
+                        
+                        </td>
+                        <td>
+                        
+                            <div class="style-bubble style-time">Reading</div>    
+                        
+                        </td>
+                        <td>
+                        
+                            <div class="style-bubble style-time">Family</div>    
+                        
+                        </td>
+
+
+                    </tr>
+
+                     <!-- 5.Row -->
+                     <tr>
+
+                        <td>
+                        
+                            <div class="style-bubble style-time-stamp">11:00 - 12:00</div>
+                                                
+                        </td>
+                        <td>
+                        
+                            <div class="style-bubble style-time">DS - Tools</div>    
+                        
+                        </td>
+                        <td>
+                        
+                            <div class="style-bubble style-time">Security</div>    
+                        
+                        </td>
+                        <td>
+                        
+                            <div class="style-bubble style-time">Algebra</div>    
+                        
+                        </td>
+                        <td>
+                        
+                            <div class="style-bubble style-time">Statistic</div>    
+                        
+                        </td>
+                        <td>
+                        
+                            <div class="style-bubble style-time">S-Architecture</div>    
+                        
+                        </td>
+                        <td>
+                        
+                            <div class="style-bubble style-time">Reading</div>    
+                        
+                        </td>
+                        <td>
+                        
+                            <div class="style-bubble style-time">Family</div>    
+                        
+                        </td>
+
+
+                    </tr>
+
+                    <!-- 5.Row -->
+                    <tr>
+
+                        <td>
+                        
+                            <div class="style-bubble style-time-stamp">12:00 - 13:00</div>
+                                                
+                        </td>
+                        <td>
+                        
+                            <div class="style-bubble style-break">break</div>    
+                        
+                        </td>
+                        <td>
+                        
+                            <div class="style-bubble style-break">break</div>    
+                        
+                        </td>
+                        <td>
+                        
+                            <div class="style-bubble style-break">break</div>    
+                        
+                        </td>
+                        <td>
+                        
+                            <div class="style-bubble style-break">break</div>    
+                        
+                        </td>
+                        <td>
+                        
+                            <div class="style-bubble style-break">break</div>    
+                        
+                        </td>
+                        <td>
+                        
+                            <div class="style-bubble style-break">break</div>    
+                        
+                        </td>
+                        <td>
+                        
+                            <div class="style-bubble style-break">break</div>    
+                        
+                        </td>
+
+
+                    </tr>
+
+                    <!-- 6.Row -->
+                    <tr>
+
+                        <td>
+                        
+                            <div class="style-bubble style-time-stamp">13:15 - 16:30</div>
+                                                
+                        </td>
+                        <td>
+                        
+                            <div class="style-bubble style-time">AI - Project</div>    
+                        
+                        </td>
+                        <td>
+                        
+                            <div class="style-bubble style-time">DB - Project</div>    
+                        
+                        </td>
+                        <td>
+                        
+                            <div class="style-bubble style-time">A - Project</div>    
+                        
+                        </td>
+                        <td>
+                        
+                            <div class="style-bubble style-time">OS - Project</div>    
+                        
+                        </td>
+                        <td>
+                        
+                            <div class="style-bubble style-time">PS - Project</div>    
+                        
+                        </td>
+                        <td>
+                        
+                            <div class="style-bubble style-time">New Stuff</div>    
+                        
+                        </td>
+                        <td>
+                        
+                            <div class="style-bubble style-time">Relaxing</div>    
+                        
+                        </td>
+
+
+                    </tr>
+
+
+
+                </table>
+                
+
+
+            </div> <!-- end of email infobox -->
+
+        </div> <!-- end of #1 email card info -->
+
+
+
+
+
+
+
+        <!-- ------------------------------------ -->
+        <!-- #2 - Table Layout                    -->
+        <!-- ------------------------------------ -->
+        <div>
+            
+            <!-- ---------------------- -->
+            <!-- Header Infobox         -->
+            <!-- ---------------------- -->
+            <div class="txt-bold">#2 - Manage Domain Table </div>
+
+
+            <!-- ---------------------- -->
+            <!-- Prototyp Infobox       -->
+            <!-- ---------------------- -->
+            <div id="grid-proto">
+
+                
+                <!-- ---------------------- -->
+                <!-- Proto/Real Text        -->
+                <!-- ---------------------- -->
+                <div>
+
+                    <div>Prototyp ➜ </div>
+                    <div>Reality </div>
+                    <div class="trans-90deg">➜ </div>
+                    
+                    <!--<div class="trans-90deg"> ➜ </div>-->
+
+
+                </div>
+
+                <!-- ---------------------- -->
+                <!-- Prototyp image         -->
+                <!-- ---------------------- -->
+                <div>
+                   <img src="https://drive.google.com/uc?id=1LQUfTQbRwVVcRI77H2x59ewPmK_lAg3x&export" class="img-size-proto-big-width" alt="img">
+                </div>
+
+            </div>
+
+            <!-- ---------------------- -->
+            <!-- Solution Infobox       -->
+            <!-- ---------------------- --> 
+            <div>
+
+                <span class="txt-bold">Solution:</span>
+                <span class="txt-cursiv">grid , div , float </span>
+
+            </div>
+
+
+            <!-- ---------------------- -->
+            <!-- #2 - Table Infobox     -->
+            <!-- ---------------------- -->
+            <div class="table-1-content-pos">
+
+            
+                <!-- Header - Manage Domains -->
+                <div class="header-domain">
+
+                    <div class="header-domain-title">Manage Domains Websites</div>
+
+                    <!-- status - infoboxes -->
+                    <div >
+                         
+                        <div class="display-ib pos-i-status style-status-new">new</div>
+                        <div class="display-ib pos-i-status style-status-buy">buy</div>
+                        <div class="display-ib pos-i-status style-status-reserved">reserved</div>
+                        <div class="display-ib pos-i-status style-status-sold">sold</div>
+
+                    </div>
+
+                </div>
+                
+                <div class="table-pos-inside">
+
+                    <table class="style-table-2" >
+                    
+                        <!-- -------------------------- -->
+                        <!-- 1.row                      -->
+                        <!-- -------------------------- -->
+                        <tr>
+                            <td>ID</td>
+                            <td>Domains</td>
+                            <td>Created On</td>
+                            <td>Status</td>
+                            <td>Server Location</td>
+                            <td>Action</td>
+                        </tr>
+
+                        <!-- -------------------------- -->
+                        <!-- 2.row                      -->
+                        <!-- -------------------------- -->
+                        <tr>
+                            <td>1</td>
+                            <td> electricity-merge.com </td>
+                            <td> 04/10/2019 </td>
+                            
+                            <td>
+
+                                <div class="display-ib pos-i-status style-status-buy">buy</div>
+
+                            </td>
+
+                            <td>Neu Delhi ( India )</td>
+                            <td>
+
+                                <a href="https://heise.de" target="_blank">
+                                    <div class="pos-i-status manage-box">Manage</div>
+                                </a>
+
+                            </td>
+                        </tr>
+
+
+                        <!-- -------------------------- -->
+                        <!-- 3.row                      -->
+                        <!-- -------------------------- -->
+                        <tr>
+                            <td>2</td>
+                            <td> trash-hero.at </td>
+                            <td> 05/08/2018 </td>
+                            <td>
+
+                                <div class="display-ib pos-i-status style-status-reserved">reserved</div>
+
+                            </td>
+                            <td>Seattle ( USA )</td>
+                            <td>
+
+                                <a href="https://heise.de" target="_blank">
+                                    <div class="pos-i-status manage-box">Manage</div>
+                                </a>
+
+                            </td>
+                        </tr>
+
+
+                        <!-- -------------------------- -->
+                        <!-- 4.row                      -->
+                        <!-- -------------------------- -->
+                        <tr>
+                            <td>3</td>
+                            <td> metall-rheinwerk-gmbh.de </td>
+                            <td> 11/05/2020 </td>
+                            <td>
+
+                                <div class="display-ib pos-i-status style-status-sold">sold</div>
+
+                            </td>
+                            <td>London ( GB )</td>
+                            <td>
+
+                                <a href="https://heise.de" target="_blank">
+                                    <div class="pos-i-status manage-box">Manage</div>
+                                </a>
+
+                            </td>
+                        </tr>
+
+
+                        <!-- -------------------------- -->
+                        <!-- 5.row                      -->
+                        <!-- -------------------------- -->
+                        <tr>
+                            <td>4</td>
+                            <td> dextra-energy-solar.com </td>
+                            <td> 11/12/2020 </td>
+                            <td>
+
+                                <div class="display-ib pos-i-status style-status-new">new</div>
+
+                            </td>
+                            <td>Berlin ( GE )</td>
+                            <td>
+
+                                <a href="https://heise.de" target="_blank">
+                                    <div class="pos-i-status manage-box">Manage</div>
+                                </a>
+
+                            </td>
+                        </tr>
+
+
+
+
+                        
+                    </table>
+                  
+                </div>
+
+            </div> <!-- end of email infobox -->
+
+        </div> <!-- end of #1 email card info -->
+
+
+
+
+
+
+
+
+        <!-- ------------------------------------ -->
+        <!-- #3 - Table Layout                    -->
+        <!-- ------------------------------------ -->
+        <div>
+            
+            <!-- ---------------------- -->
+            <!-- Header Infobox         -->
+            <!-- ---------------------- -->
+            <div class="txt-bold">#3 - Sell Table</div>
+
+
+            <!-- ---------------------- -->
+            <!-- Prototyp Infobox       -->
+            <!-- ---------------------- -->
+            <div id="grid-proto">
+
+                
+                <!-- ---------------------- -->
+                <!-- Proto/Real Text        -->
+                <!-- ---------------------- -->
+                <div>
+
+                    <div>Prototyp ➜ </div>
+                    <div>Reality </div>
+                    <div class="trans-90deg">➜ </div>
+                    
+                    <!--<div class="trans-90deg"> ➜ </div>-->
+
+
+                </div>
+
+                <!-- ---------------------- -->
+                <!-- Prototyp image         -->
+                <!-- ---------------------- -->
+                <div>
+                   <img src="https://drive.google.com/uc?id=1pFn5isIEzurXPXCdfqOUQDys9IXu_lRf&export" class="img-size-proto-big-width" alt="img">
+                </div>
+
+            </div>
+
+            <!-- ---------------------- -->
+            <!-- Solution Infobox       -->
+            <!-- ---------------------- --> 
+            <div>
+
+                <span class="txt-bold">Solution:</span>
+                <span class="txt-cursiv">grid , div , float </span>
+
+            </div>
+
+
+            <!-- ---------------------- -->
+            <!-- #3 - Table Infobox     -->
+            <!-- ---------------------- -->
+            <div class="table-3-content-pos" >
+
+            
+                
+                <table class="sell-table">
+
+
+                    <!-- ------------------------------- -->
+                    <!-- 1.row - title of serices        -->
+                    <!-- ------------------------------- -->
+
+                    <tr>
+                        <td> Basic </td>
+                        <td> Premium </td>
+                        <td> VIP </td>
+                    </tr>
+
+
+                    <!-- ------------------------------- -->
+                    <!-- 2.row - prices of services      -->
+                    <!-- ------------------------------- -->
+
+
+                    <tr>
+                        <td class="price-box bg-green"> 9.99 $ </td>
+                        <td class="price-box bg-lila"> 19.99 $ </td>
+                        <td class="price-box bg-blue"> 39.99 $ </td>
+                    </tr>
+
+
+                    <!-- ------------------------------- -->
+                    <!-- 3.row - list of services        -->
+                    <!-- ------------------------------- -->
+
+
+                    <!-- 1.row ( 3.row ) -->
+                    <tr>
+                        <td> pdf books </td>
+                        <td> pdf books </td>
+                        <td> pdf books </td>
+                    </tr>
+
+                     <!-- 2.row ( 3.row ) -->
+                     <tr>
+                        <td> 3.Month access </td>
+                        <td> 6.Month access </td>
+                        <td> 1.year access </td>
+                    </tr>
+
+                     <!-- 3.row ( 3.row ) -->
+                     <tr>
+                        <td> 1 x 45 Min. Online Meeting </td>
+                        <td> 3 x 45 Min. Online Meeting </td>
+                        <td> 6 x 60 Min. Online Meeting </td>
+                    </tr>
+
+                    <!-- 4.row ( 3.row ) -->
+                    <tr>
+                        <td> - </td>
+                        <td> 2 x 1h Live Meetings </td>
+                        <td> 4 x 1h Live Meetings </td>
+                    </tr>
+
+                    <!-- 5.row ( 3.row ) -->
+                    <tr>
+                        <td> - </td>
+                        <td> 20 GB Cloud Storage </td>
+                        <td> 50 GB Gloud Storage </td>
+                    </tr>
+
+                     <!-- 6.row ( 3.row ) -->
+                     <tr>
+                        <td> - </td>
+                        <td> - </td>
+                        <td> 2. Tickets Christmas Party </td>
+                    </tr>
+
+                   
+                    <!-- ------------------------------- -->
+                    <!-- 4.row - Buttons                 -->
+                    <!-- ------------------------------- -->
+
+
+                    <tr>
+                        <td > 
+                            <a href="https://heise.de" target="_blank">
+                                <div class="purchase-button line-green">Purchase</div>
+                            </a>
+                        </td>
+
+                        <td> 
+                            <a href="https://heise.de" target="_blank">
+                                <div class="purchase-button line-lila">Purchase</div>
+                            </a>
+                        </td>
+
+                        <td>
+                            <a href="https://heise.de" target="_blank">
+                                <div class="purchase-button line-blue">Purchase</div>
+                            </a>
+                        </td>
+                    </tr>
+
+
+                </table>
+                  
+                    
+
+            </div> <!-- end of email infobox -->
+
+        </div> <!-- end of #1 email card info -->
+
+
+
+
+
+
+
+        <!-- ------------------------------------ -->
+        <!-- #4 - Table Layout                    -->
+        <!-- ------------------------------------ -->
+        <div>
+            
+            <!-- ---------------------- -->
+            <!-- Header Infobox         -->
+            <!-- ---------------------- -->
+            <div class="txt-bold">#4 - Manage Customer Table</div>
+
+
+            <!-- ---------------------- -->
+            <!-- Prototyp Infobox       -->
+            <!-- ---------------------- -->
+            <div id="grid-proto">
+
+                
+                <!-- ---------------------- -->
+                <!-- Proto/Real Text        -->
+                <!-- ---------------------- -->
+                <div>
+
+                    <div>Prototyp ➜ </div>
+                    <div>Reality </div>
+                    <div class="trans-90deg">➜ </div>
+                    
+                    <!--<div class="trans-90deg"> ➜ </div>-->
+
+
+                </div>
+
+                <!-- ---------------------- -->
+                <!-- Prototyp image         -->
+                <!-- ---------------------- -->
+                <div>
+                   <img src="https://drive.google.com/uc?id=1_YXWneACOA5MrQJ05kUN42Q69niz_9r5&export" class="img-size-proto-big-width" alt="img">
+                </div>
+
+            </div>
+
+            <!-- ---------------------- -->
+            <!-- Solution Infobox       -->
+            <!-- ---------------------- --> 
+            <div>
+
+                <span class="txt-bold">Solution:</span>
+                <span class="txt-cursiv">grid , div , float </span>
+
+            </div>
+
+
+            <!-- ---------------------- -->
+            <!-- #4 - Table Infobox     -->
+            <!-- ---------------------- -->
+            <div class="table-4-content-pos" >
+
+
+                <!-- ----------------------------- -->
+                <!-- Header - Users                -->
+                <!-- ----------------------------- -->
+                <div class="header-users">Users</div>
+
+
+                <!-- ----------------------------- -->
+                <!-- Table - Container             -->
+                <!-- ----------------------------- -->
+                <div class="table-container">
+
+
+                    <table class="user-table">
+
+                        <!-- ----------------------------- -->
+                        <!-- 1.row                         -->
+                        <!-- ----------------------------- -->
+                        <tr>
+
+                            <th>User</th>
+                            <th>Status</th>
+                            <th>Location</th>
+                            <th>Phone</th>
+                            <th>Contact</th>
+                            <th>Actions</th>
+
+                        </tr>
+
+
+                        <!-- ----------------------------- -->
+                        <!-- 2.row                         -->
+                        <!-- ----------------------------- -->
+                        <tr>
+
+                            <!-- User -->
+                            <!-- Flexlayout for one row -->
+                            <td class="flex-user">
+
+                                <img src="https://drive.google.com/uc?id=1Snl-uvKxR3iVrhH9fPhYkY7_AWSm3aR5&export" class="user-image-circle" alt="img">
+
+
+                                <div>
+
+                                    <div class="user-name">Kiran Acharya</div>
+                                    
+                                    <a href="https://twitter.com/elsvene" class="link-tbl4" target="_blank">
+                                        <div class="user-social">@kiranarcharya</div>
+                                    </a>
+
+                                </div>
+
+                            </td>
+
+                            <!-- Status -->
+                            <td >
+
+                                <!-- Div - Inline-Block - Circle -->
+                                <div class="mini-circle bg-green"></div>
+                                <div class="display-ib">Active</div> 
+
+                            </td>
+
+                            <!-- Location -->
+                            <td>India</td>
+
+
+                            <!-- Phone -->
+                            <td>+91 9876543215</td>
+                            
+                            
+                            <!-- Contact -->
+                            <td >
+
+
+                            <a href="https://twitter.com/elsvene" class="link-tbl4-contact" target="_blank">
+                                <div class="contact-button">Contact</div>
+                            </a>
+
+                            </td>
+                            
+                            
+                            <!-- Actions -->
+                            <td>
+
+                                <!-- 3. point action -->
+
+                                <a href="https://twitter.com/elsvene" class="link-tbl4-action" target="_blank">    
+                                    
+                                    <div class="minipoint-hover" >
+                                        <div class="minipoint"></div>
+                                        <div class="minipoint"></div>
+                                        <div class="minipoint"></div>
+                                    </div>
+
+                                </a>
+
+                            </td>
+                           
+
+                        </tr>
+
+
+
+                        <!-- ----------------------------- -->
+                        <!-- 3.row                         -->
+                        <!-- ----------------------------- -->
+                        <tr>
+
+                            <!-- User -->
+                            <!-- Flexlayout for one row -->
+                            <td class="flex-user">
+
+                                <img src="https://drive.google.com/uc?id=1HMFG5iRNkYZklxfXEfZgJCrTi_9yi_ps&export" class="user-image-circle" alt="img">
+
+
+                                <div>
+
+                                    <div class="user-name">Ugahn Bhundar</div>
+
+                                    <a href="https://twitter.com/elsvene" class="link-tbl4" target="_blank">
+                                        <div class="user-social">@ugahnbhundar</div>
+                                    </a>
+                                </div>
+
+                            </td>
+
+                            <!-- Status -->
+                            <td>
+
+                                <!-- Div - Inline-Block - Circle -->
+                                <div class="mini-circle bg-green"></div>
+                                <div class="display-ib">Active</div> 
+
+                            </td>
+
+                            <!-- Location -->
+                            <td>Ghana</td>
+
+
+                            <!-- Phone -->
+                            <td>+21 5872553215</td>
+                            
+                            
+                            <!-- Contact -->
+                            <td>
+                                
+                                <a href="https://twitter.com/elsvene" class="link-tbl4-contact" target="_blank">
+                                    <div class="contact-button">Contact</div>
+                                </a>
+
+                            </td>
+                            
+                            
+                            <!-- Actions -->
+                            <td>
+
+                                <a href="https://twitter.com/elsvene" class="link-tbl4-action" target="_blank">    
+                                    
+                                    <div class="minipoint-hover" >
+                                        <div class="minipoint"></div>
+                                        <div class="minipoint"></div>
+                                        <div class="minipoint"></div>
+                                    </div>
+                                </a>
+
+                            </td>
+                           
+
+                        </tr>
+
+
+
+
+                        <!-- ----------------------------- -->
+                        <!-- 4.row                         -->
+                        <!-- ----------------------------- -->
+                        <tr>
+
+                            <!-- User -->
+                            <!-- Flexlayout for one row -->
+                            <td class="flex-user">
+
+                                <img src="https://drive.google.com/uc?id=1ZMQpeI5jU4crtpq3d-lUIIDJk9DumhBe&export" class="user-image-circle" alt="img">
+
+
+                                <div>
+
+                                    <div class="user-name">Hamid Irgultan</div>
+
+                                    <a href="https://twitter.com/elsvene" class="link-tbl4" target="_blank">
+                                        <div class="user-social">@hamidirgultan</div>
+                                    </a>
+
+                                </div>
+
+                            </td>
+
+                            <!-- Status -->
+                            <td>
+
+                                <!-- Div - Inline-Block - Circle -->
+                                <div class="mini-circle bg-red"></div>
+                                <div class="display-ib">Inactive</div> 
+
+                            </td>
+
+                            <!-- Location -->
+                            <td>Turkey</td>
+
+
+                            <!-- Phone -->
+                            <td>+56 1376543215</td>
+                            
+                            
+                            <!-- Contact -->
+                            <td>
+
+                                <a href="https://twitter.com/elsvene" class="link-tbl4-contact" target="_blank">
+                                    <div class="contact-button">Contact</div>
+                                </a>
+
+                            </td>
+                            
+                            
+                            <!-- Actions -->
+                            <td>
+
+                                <a href="https://twitter.com/elsvene" class="link-tbl4-action" target="_blank">    
+                                    
+                                    <div class="minipoint-hover" >
+                                        <div class="minipoint"></div>
+                                        <div class="minipoint"></div>
+                                        <div class="minipoint"></div>
+                                    </div>
+                                </a>
+
+                            </td>
+                           
+
+                        </tr>
+
+
+
+                        <!-- ----------------------------- -->
+                        <!-- 5.row                         -->
+                        <!-- ----------------------------- -->
+                        <tr>
+
+                            <!-- User -->
+                            <!-- Flexlayout for one row -->
+                            <td class="flex-user">
+
+                                <img src="https://drive.google.com/uc?id=10PDI_0RElVGhBSYaK88jfgS6izZKvZUt&export" class="user-image-circle" alt="img">
+
+
+                                <div>
+
+                                    <div class="user-name">Debbie Watson</div>
+
+                                    <a href="https://twitter.com/elsvene" class="link-tbl4" target="_blank">
+                                        <div class="user-social">@debbiewatson</div>
+                                    </a>
+
+                                </div>
+
+                            </td>
+
+                            <!-- Status -->
+                            <td>
+
+                                 <!-- Div - Inline-Block - Circle -->
+                                 <div class="mini-circle bg-green"></div>
+                                 <div class="display-ib">Active</div> 
+
+                            </td>
+
+                            <!-- Location -->
+                            <td>United Kingdom</td>
+
+
+                            <!-- Phone -->
+                            <td>+11 3876543215</td>
+                            
+                            
+                            <!-- Contact -->
+                            <td>
+
+                                <a href="https://twitter.com/elsvene" class="link-tbl4-contact" target="_blank">
+                                    <div class="contact-button">Contact</div>
+                                </a>
+
+                            </td>
+                            
+                            
+                            <!-- Actions -->
+                            <td>
+
+                                <a href="https://twitter.com/elsvene" class="link-tbl4-action" target="_blank">    
+                                    
+                                    <div class="minipoint-hover" >
+                                        <div class="minipoint"></div>
+                                        <div class="minipoint"></div>
+                                        <div class="minipoint"></div>
+                                    </div>
+                                </a>
+
+                            </td>
+                           
+
+                        </tr>
+                   
+                        
+
+
+                        <!-- ----------------------------- -->
+                        <!-- 6.row                         -->
+                        <!-- ----------------------------- -->
+                        <tr>
+
+                            <!-- User -->
+                            <!-- Flexlayout for one row -->
+                            <td class="flex-user">
+
+                                <img src="https://drive.google.com/uc?id=1TxV-SzdJfoOzrNQ5s97JoJ6bd-QrjvK7&export" class="user-image-circle" alt="img">
+
+
+                                <div>
+
+                                    <div class="user-name">Niklas Wark</div>
+
+                                    <a href="https://twitter.com/elsvene" class="link-tbl4" target="_blank">
+                                        <div class="user-social">@niklaswark</div>
+                                    </a>
+
+                                </div>
+
+                            </td>
+
+                            <!-- Status -->
+                            <td>
+
+                                 <!-- Div - Inline-Block - Circle -->
+                                 <div class="mini-circle bg-red"></div>
+                                 <div class="display-ib">Inactive</div> 
+
+                            </td>
+
+                            <!-- Location -->
+                            <td>Germany</td>
+
+
+                            <!-- Phone -->
+                            <td>+91 9876543215</td>
+                            
+                            
+                            <!-- Contact -->
+                            <td>
+
+                                <a href="https://twitter.com/elsvene" class="link-tbl4-contact" target="_blank">
+                                    <div class="contact-button">Contact</div>
+                                </a>
+
+                            </td>
+                            
+                            
+                            <!-- Actions -->
+                            <td>
+
+                                <a href="https://twitter.com/elsvene" class="link-tbl4-action" target="_blank">    
+                                    
+                                    <div class="minipoint-hover" >
+                                        <div class="minipoint"></div>
+                                        <div class="minipoint"></div>
+                                        <div class="minipoint"></div>
+                                    </div>
+                                </a>
+
+                            </td>
+                           
+
+                        </tr>
+                   
+                   
+
+                        <!-- ----------------------------- -->
+                        <!-- 7.row                         -->
+                        <!-- ----------------------------- -->
+                        <tr>
+
+                            <!-- User -->
+                            <!-- Flexlayout for one row -->
+                            <td class="flex-user">
+
+                                <img src="https://drive.google.com/uc?id=1t1luSJQmvUEv_1HTFuQzdmtPAK6LsciK&export" class="user-image-circle" alt="img">
+
+
+                                <div>
+
+                                    <div class="user-name">Susan Patova</div>
+
+                                    <a href="https://twitter.com/elsvene" class="link-tbl4" target="_blank">
+                                        <div class="user-social">@susanpatova</div>
+                                    </a>
+
+                                </div>
+
+                            </td>
+
+                            <!-- Status -->
+                            <td>
+
+                                 <!-- Div - Inline-Block - Circle -->
+                                 <div class="mini-circle bg-green"></div>
+                                 <div class="display-ib">Active</div> 
+
+                            </td>
+
+                            <!-- Location -->
+                            <td>Ukraine</td>
+
+
+                            <!-- Phone -->
+                            <td>+81 5876543215</td>
+                            
+                            
+                            <!-- Contact -->
+                            <td>
+
+                                <a href="https://twitter.com/elsvene" class="link-tbl4-contact" target="_blank">
+                                    <div class="contact-button">Contact</div>
+                                </a>
+
+                            </td>
+                            
+                            
+                            <!-- Actions -->
+                            <td>
+
+                                <a href="https://twitter.com/elsvene" class="link-tbl4-action" target="_blank">    
+                                    
+                                    <div class="minipoint-hover" >
+                                        <div class="minipoint"></div>
+                                        <div class="minipoint"></div>
+                                        <div class="minipoint"></div>
+                                    </div>
+                                </a>
+
+                            </td>
+                           
+
+                        </tr>
+                   
+                   
+                    </table>
+
+                </div>
+                
+              
+                  
+                    
+
+            </div> <!-- end of table infobox -->
+
+        </div> <!-- end of #1 table card info -->
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+</body>
+
+
+</html>

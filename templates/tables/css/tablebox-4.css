@@ -1,0 +1,270 @@
+/* ---------------------------------------------------------- */
+/* #4 - tablebox 
+/* ---------------------------------------------------------- */
+/* - table structure , float , styling , txt , pos
+/* ---------------------------------------------------------- */
+
+
+
+/* 4.table infobox pos */
+div.table-4-content-pos {
+
+   
+
+    background-color: var(--light-grey);
+}
+
+
+table.user-table { 
+
+    width: 100%;
+    text-align: left;
+
+    border-spacing: 0px 18px; 
+}
+
+
+
+
+/* -------------------------------------------- */
+/*  1. DIV | Header - Users                     */
+/* -------------------------------------------- */
+div.header-users { 
+
+    padding: 16px;
+    
+    font-weight: bold;
+    font-size: 1.4em;
+
+    font-family: 'Brush Script MT', cursive;
+}
+
+/* -------------------------------------------- */
+/*  2. DIV | Table Container                    */
+/* -------------------------------------------- */
+div.table-container { 
+
+    margin-top:16px;
+    margin-bottom: 16px;
+
+    margin-left:16px;
+    margin-right:16px;
+
+}
+
+
+/* 1.row - padding style */
+table.user-table tr:first-child th { padding: 16px; }
+    
+   
+
+
+
+
+/* 1.row , 1.col -> users , fix width */
+table.user-table tr th:first-child { width: 350px;  }
+
+
+
+
+/* --------------------------------------- */
+/* 2.row , 1.col - users styling           */
+/* --------------------------------------- */
+
+/* only till 2.row tr styling */
+table.user-table tr:nth-child( n + 2 ) td {
+
+    
+    background-color: #E6E6E6;
+  
+}
+
+
+/* every 1.col & last col curved edges */
+table.user-table tr:nth-child( n + 2 ) td:first-child {
+
+    border-radius: 10px 0px 0px 10px;
+    border: 1px solid var(--light-grey);
+    overflow:hidden;
+    
+    
+    
+}
+
+table.user-table tr:nth-child( n + 2 ) td:last-child {
+
+    border-radius: 0px 10px 10px 0px;
+    border: 1px solid var(--light-grey);
+}
+
+
+/* till 2.row same inside pos */
+table.user-table tr:nth-child( n + 2 ) td { 
+
+    padding: 12px;
+   
+}
+
+.flex-user { 
+
+   
+    display: flex;
+    align-items: center;
+
+
+    
+  
+}
+
+.flex-user div { padding-left:.5em;}
+
+
+/* user-image-circle */
+
+.user-image-circle {
+
+    width: 70px;
+    height: 70px;
+
+    border-radius: 50%;
+}
+
+
+/* user-name */
+.user-name { font-weight: bold; }
+
+/* user-social */
+.user-social { color: var(--dark-grey); }
+
+
+
+
+/* col contact , col action centered */
+table.user-table tr th:nth-child(5) ,
+table.user-table tr:nth-child(n + 2 ) td:nth-child(5) div , 
+table.user-table tr th:nth-child(6) ,
+table.user-table tr:nth-child(n + 2 ) td:nth-child(6) div {
+
+    
+    text-align: center;
+
+    /* bring div centered*/
+    margin-left:auto;
+    margin-right: auto;
+    
+}
+
+
+
+
+
+/* --------------------------------- */
+/* active / inactive div circle
+/* --------------------------------- */
+
+
+.mini-circle { 
+
+    display: inline-block;
+
+    width: 13px;
+    height: 13px;
+
+    margin-right: .3em;
+
+    border-radius: 50%;
+}
+
+.bg-red { background-color: red;}
+
+.bg-green { background-color: #01DF3A; }
+
+
+
+
+/* --------------------------------- */
+/* contact
+/* --------------------------------- */
+
+
+.contact-button { 
+
+
+    width: 80px;
+    text-align: center;
+    padding:8px;
+    color:white;
+    font-weight: bold;
+    background-color: var(--deep-blue);
+
+    border-radius: 10px;
+}
+
+
+
+/* --------------------------------- */
+/* mini point - action
+/* --------------------------------- */
+
+
+.minipoint { 
+
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+
+    margin-bottom: .1em;
+
+    background-color: black;
+
+}
+
+
+
+div.minipoint-hover { 
+
+    width: 20px;
+    height: 30px;
+    
+    padding-top:8px;
+
+
+    border-radius: 5px;
+  
+}
+
+
+/* ------------------------------------------------------ */
+/* Link Styling link-tbl4  , link-tbl4-contact            */
+/* ------------------------------------------------------ */
+
+
+a.link-tbl4:visited {  color: var(--dark-grey); }
+
+a.link-tbl4:hover div.user-social {  color: var(--css-blue); }
+
+    
+a.link-tbl4-contact { color: var(--white);}
+
+a.link-tbl4-contact:hover div.contact-button { background-color: var(--moon-dark);}
+
+
+a.link-tbl4-action:hover div.minipoint-hover { 
+    
+    background-color: var(--deep-blue);
+   
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

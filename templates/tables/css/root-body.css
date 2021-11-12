@@ -1,0 +1,74 @@
+/* ------------------------------------------------- */
+/* CSS Basics Styling Settings
+/* :root , body 
+/* ------------------------------------------------- */
+
+/*:root -> beginnt ab <html> */
+:root {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+
+    /* basic var colors */
+    --css-blue: #2dceff;
+
+    --deep-blue: #2E9AFE;
+    --gras-green: #04B45F;
+
+    --light-lila: #8258FA;
+
+    --yellow-green: yellowgreen;
+    --orange-dark: #FFBF00;
+    --red-light: #FA5858;
+
+    --dark-sea-blue: #0B2161;
+    --skin-brown: #d1c0a5;
+    --moon-dark: #212121;
+    
+    --harvard-red: #A51C30;
+    --light-grey: #F2F2F2;
+    --light2-grey: #D8D8D8;
+    --dark-grey: #848484;
+    
+    --white: white;
+
+  
+}
+
+body { color: var(--moon-dark); }
+
+
+
+/* ----------------------------------------------------- */
+/* Often using styling arts
+/* ----------------------------------------------------- */
+
+/* -------------------------------- */
+/* LINE - HEIGHTs                   */
+/* -------------------------------- */
+
+.line-height-2 { line-height: 2em; }
+.line-height-1-5 { line-height: 1.5em }
+.line-height-1-2 { line-height: 1.2em }
+
+
+/* -------------------------------- */
+/* ROTATIONs                        */
+/* -------------------------------- */
+
+/* rotate element in 90deg */
+.trans-90deg { transform: rotate(90deg); }
+
+
+
+
+/* -------------------------------- */
+/* FONT-STYLES                      */
+/* -------------------------------- */
+
+/* txt bold */
+.txt-bold { font-weight: bold;}
+
+/* txt cursiv */
+.txt-cursiv { font-style: italic; }

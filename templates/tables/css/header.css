@@ -1,0 +1,40 @@
+/* ------------------------------------------------- */
+/* HEADER - Information Box Styling
+/* ( the light skin color part )
+/* ------------------------------------------------- */
+
+
+/* ----------------------- */ 
+/* title infobox           */
+/* ----------------------- */ 
+
+header > h1.header-title { 
+    font-size: 1.2em; 
+    background-color: #d1c0a5;
+    padding: .5em;
+    border: .1em solid black;
+}
+
+
+
+/* ----------------------- */ 
+/* txt infobox        */
+/* ----------------------- */ 
+
+header .header-infobox {
+    border: .15em dotted black;
+    padding: .5em;
+    margin-bottom: 1em;
+    background-color: #d1c0a5;
+}
+
+header .header-topics { font-weight: bold;}
+
+header .p-pos-text-topics { padding-left: .5em;  padding-right: .5em; }
+    
+   
+    
+
+
+
+
