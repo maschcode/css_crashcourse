@@ -36,6 +36,14 @@
     margin-bottom: 2em;
 }
 
+/* only bigger 1920px get 1fr 1fr layout */
+@media ( max-width: 1920px ) {
+
+    #grid-main {
+
+        grid:auto / 1fr;
+    }
+}
 
 /* ------------------------------------- */
 /* Title - Infobox | 1. DIV              */
