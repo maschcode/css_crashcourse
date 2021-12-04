@@ -1,0 +1,185 @@
+/* ---------------------------------------------------------- */
+/* #6 - SPECIAL EFFECTS - sticky header 
+/* ---------------------------------------------------------- */
+
+
+ 
+
+
+/* ------------------------------------------- */
+/*  Mini Web - Page                            */
+/* ------------------------------------------- */
+
+
+div.div-special-6-pos { 
+
+    background-color: var(--light2-grey);
+
+    height: 650px;
+    width: 100%;
+
+    overflow-y: scroll;
+
+   
+}
+
+
+/* -------------------------------------------- */
+/* Header 
+/* -------------------------------------------- */
+
+/* header image size */
+img.img-header { 
+
+    width: 100%;
+    height: 280px;
+    /* img and grid nav between space */
+    /* by div by div no space , only by img div combination */
+    margin-bottom: -9px;
+}
+
+
+/* Header Outer */
+div.header-outer {
+
+    display: flex;
+    position: sticky;
+
+    /* height is calculates by 
+    /* img height 280px , basic nav height 100px
+    /* so we have height of 380px for both elements */
+    height: 380px;
+    
+
+    top: -280px;
+}
+
+/* Header Inner */
+
+/* : the inner header will be shrink to this positon
+/* so taht the header if user want more focus on reading
+/* as navigation
+/* so we calc. 3 x 100px nav height and after it will be
+/* shrink because only if user minimum scroll more u can
+/* say that user is more focus on text */
+
+div.header-inner { 
+
+    /* that is the smallest version on nav header */
+    /* so our nav is only show smaller */
+    
+    height: 380px;
+    width: 100%;
+
+    position: sticky;
+    top:0px;
+  
+    
+}
+
+
+
+
+/* Header - Navigation */
+div#js-navigation { 
+
+    background-color: var(--moon-dark);
+    color: #f1dd68;
+
+    display: grid;
+    grid: 100px / 120px repeat(4, 1fr);   
+
+    justify-content: center;
+    align-items: center;
+
+
+    padding:0px;
+   
+
+    border-bottom: 16px solid var(--light2-grey);
+  
+}
+
+div#js-navigation div { 
+
+    /* fill full size divwidth: 100%; in grid box */
+    padding:16px;
+    /* only work by changing e.g hover effect */
+    transition: .5s;
+
+    text-align: center;
+}
+
+
+/* position in js logo box centered */
+div#js-navigation div:nth-child(1) {
+
+    padding-top:24px;
+    padding-left: 32px;
+   
+}
+
+div#js-navigation div:nth-child(5) {
+
+    margin-right:16px;
+   
+}
+
+/* all navigation link hover only not js logo box */
+div#js-navigation div:nth-child(n + 2):hover { 
+
+    background-color: #f1dd68;
+    color:black;
+    cursor: pointer;  
+}
+
+
+/* js-logo icon */
+.js-logo { 
+
+    width: 2.7em;
+    height: 2.7em;
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------- */
+/*  Content Box - Mini Web - Page              */
+/* ------------------------------------------- */
+
+.txt-passage { 
+
+    background-color: var(--light-grey);
+
+    /* outside box */
+    margin-left: 22px;
+    margin-right: 22px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+
+    /* inside box */
+    padding-left: 22px;
+    padding-right: 22px;
+
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+}
+
+
+
+/* ------------------------------------------- */
+/*  Mini Web - Page                            */
+/* ------------------------------------------- */
+
+
+/* 380px basic , + 100px + 100px, then grid nav smaller 
+/* by 580px `*/
+

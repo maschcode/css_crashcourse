@@ -1,0 +1,795 @@
+/* ---------------------------------------------------------- */
+/* #5 - SPECIAL EFFECTS - more nav. 
+/* ---------------------------------------------------------- */
+/* : 1) color navbar 
+/* : 2) complex navbar 
+/* ---------------------------------------------------------- */
+
+
+/* Template Special Effect till 2.cols  */
+main#grid-main div.one-col {  grid-column: 1 / span 2; }   
+
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/* 1) vertical color navbar                                                   */
+/* -------------------------------------------------------------------------- */
+
+
+.special-5-header-1 {
+
+    margin-top:22px;
+    background-color: var(--dark-sea-blue);
+    color:white;
+    font-weight: bold;
+    padding: 12px;
+}
+
+div.speical-5-main-1 { 
+
+    padding-top: 12px;
+    padding-bottom:12px;
+
+    padding-left:200px;
+    padding-right:12px;
+
+   
+    background-color: var(--light-grey);
+    height: 450px;
+}
+
+
+
+/* --------------------------------------- */
+/* ul-li-color-nav                         */
+/* --------------------------------------- */
+
+
+ul.ul-color-nav {
+
+    position: absolute;
+
+    display: inline-block;
+    list-style-type: none;
+
+    /* default reset of padding-left 40px */
+    padding-left: 12px;
+
+}
+
+
+/* li - styling */
+
+.ul-color-nav li {
+
+    padding:16px;
+
+   
+    border-radius: 0px 10px 10px 0px;
+
+    /* space between every li */
+    margin-bottom: 12px;
+
+    /* flex */
+    display: flex;
+    align-items: center;
+
+    width: 40px;
+
+    /* transition effect if it grows */
+    transition: width .3s;
+   
+}
+
+/* different colors for li */
+
+.ul-color-nav li:nth-child(1) { 
+    background-color: #7DCEA0 ;
+}
+
+.ul-color-nav li:nth-child(2) { 
+    background-color: #F4D03F;
+}
+
+
+.ul-color-nav li:nth-child(3) { 
+    background-color: #C39BD3;
+
+}
+
+.ul-color-nav li:nth-child(4) { 
+    background-color: #85C1E9;
+
+}
+
+/* default all link description unshown */
+ul.ul-color-nav li div { 
+    
+    /* visibiliy solution is better for transition as display:block */
+    visibility: hidden;
+
+    padding-left:0px; 
+    transition: all .1s linear;
+
+    font-weight: bold;
+
+}
+
+/* icon nav color */
+
+.icon-color-nav { 
+
+    height: 2em;
+    width: auto; 
+    
+}
+
+
+
+/* ------------------------------------ */
+/* ul-li hover handling                 */
+/* ------------------------------------ */
+
+/* default li get bigger */
+ul.ul-color-nav li:hover { width: 200px; }
+
+/* left to right push effect 0px to 20px */
+ul.ul-color-nav li:hover div { padding-left: 20px; }
+
+
+ul.ul-color-nav li:hover div {
+
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/* 2) Complex Horizontal Navbar                                               */
+/* -------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------- */
+/* basic main page of complex navbar            */
+/* -------------------------------------------- */
+.special-5-main-2 { 
+
+    height: 650px;
+
+    padding: 16px;
+    background-color: grey;
+
+}
+
+
+/* ------------------------------------ */
+/* ul - component ( underline )         */
+/* ------------------------------------ */
+.box-underline { 
+
+    width: 100%;
+    height: 105px;
+    background-color: var(--dex-grey);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------*/
+/* Main ul - complex
+/* -------------------------------------*/
+ul.nav-complex {
+
+    /* because that our sub nav can orientat
+    on this width and not body */
+    /* because our sub nav is pos. absolute */
+    position: relative;
+ 
+    background-color: var(--light-grey);
+
+    /* delete default ul pos & styling */
+    list-style-type: none;
+
+    padding-left:0px;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+/* -------------------------------------*/
+/* grid ul - li ( main )
+/* -------------------------------------*/
+#grid-1st-nav {
+
+    display: grid;
+    grid: 100px / repeat( 3 , 300px ) 1fr 320px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------*/
+/* Main ul - li ( buttons )
+/* : software
+/* : it
+/* : company 
+/* -------------------------------------*/
+
+
+
+
+/* -------------------------------------- */ 
+/* Pos. Buttons
+/* : software , it , company 
+/* -------------------------------------- */ 
+
+button[class^="button-nav1-"] { 
+
+    /* stretch button in full size of grid-cell */
+    width: 100%;
+    height: 100%;
+   
+    font-size: 1.2em;
+    color:white;
+
+    /* to animate that is click button */
+    cursor: pointer;
+   
+    /* delete default button style*/
+    outline-offset: 0px;
+    outline: none;
+    border:0px;
+
+    /* inside pos styling */
+    padding-left:18px;
+    padding-top:18px;
+    padding-bottom: 18px;
+    padding-right:0px;
+
+    /* all text in button left side */
+    text-align: left;
+    /* more distance between title & sub title */
+    line-height: 1.2em;  
+}
+
+
+/* -------------------------------------- */ 
+/* Styling Buttons
+/* : software , it , company 
+/* -------------------------------------- */ 
+
+button[class^="button-nav1-"] {
+
+    /* inside mini flex layout to bring
+    /* element next each other */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+
+button.button-nav1-software , 
+button.button-nav1-it { 
+
+    background-color: var(--dex-red);
+    border-right:4px solid white;
+}
+
+button.button-nav1-company { 
+
+    background-color: var(--dex-grey);
+}
+
+
+/* -------------------------------------- */ 
+/* Hover Buttons
+/* : software , it , company 
+/* -------------------------------------- */ 
+
+button.button-nav1-software:hover , 
+button.button-nav1-it:hover { 
+
+    background-color: var(--dex-grey);
+    transition: .2s;   
+}
+
+button.button-nav1-company:hover { 
+
+    background-color: var(--dex-red);
+    transition: .2s;
+}
+
+
+/* ----------------------------------- */ 
+/* title in button                     */
+/* ----------------------------------- */ 
+
+.nav-title { 
+
+    font-weight: bold;
+    font-size: .9em;
+    letter-spacing: .1em;
+}
+
+.nav-sub-title { font-size: .7em; }
+
+
+   
+
+/* ----------------------------------- */ 
+/* icon in buttons                     */
+/* ----------------------------------- */ 
+
+
+/* first icon in button */
+.icon-button-123-first { 
+
+    width: auto;
+    height: 2em;
+
+    /* basic right space */
+    margin-right:20px;
+}
+
+/* little bit better fix position of
+/* special icon gluebirne */
+.icon-button-2-first { 
+
+    width: auto;
+    height: 2em;
+
+    margin-bottom: 5px;
+    /* basic right space */
+    margin-right:20px;
+}
+
+
+/* in company last img the company icon */
+/* put to the right */
+button.button-nav1-company div + img { 
+
+   margin-left: auto;
+}
+
+
+
+/* ------------------------------------- */
+/* :focus button 
+/* ( software , it , company ) 
+/* ------------------------------------- */
+
+
+button.button-nav1-software:focus,
+button.button-nav1-it:focus { 
+
+    background-color: var(--dex-grey);
+}
+
+button.button-nav1-company:focus {
+
+    background-color: var(--dex-red);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------- */
+/* 3. Sub - Navigations
+/* ----------------------------------------------------- */
+/* software, it , company ( sub, sub sub , sub sub sub )
+/* ----------------------------------------------------- */
+
+
+
+/* ------------------------------------- */
+/* Sub - Navigation software , it
+/* ------------------------------------- */
+
+ul.sub-nav-software ,
+ul.sub-nav-it, 
+ul.sub-nav-company { 
+
+    /* default main sub nav unshown */
+    visibility: hidden;
+
+    position: absolute;
+    left:0;
+
+    width: 100%;
+
+    list-style: none;
+    background-color: var(--dex-red);
+    color:white;
+
+    /* grey underline height is 5px */
+    margin-top: 0px;
+    /* only if moving content the transition will work */
+    /* so only by :focus it will be visible and margin-top:5px */
+    /* moving down effect */
+    transition: all .3s ease-in;
+
+    padding-left:0px;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+/* sub nav li */
+ul.sub-nav-software li.sub-nav-1st,
+ul.sub-nav-it li.sub-nav-1st , 
+ul.sub-nav-company li.sub-nav-1st {
+
+    padding-top:22px;
+    padding-left:22px;
+    padding-bottom: 22px;
+    padding-right: 32px;
+
+    width: 400px;
+
+    border-right: .1px solid rgba(192,192,192,0.3);   
+}
+
+
+/* li elements with more sub navs */
+/* left is li-text, right is arrow icon */
+.flex-left-right {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* sub nav li:hover */
+ul.sub-nav-software li:hover,
+ul.sub-nav-it li:hover, 
+ul.sub-nav-company li:hover {
+
+    background-color: var(--dex-grey);
+    cursor: pointer;
+}
+
+
+
+/* ------------------------------------- */
+/* Sub - Navigation company
+/* ------------------------------------- */
+
+
+ul.sub-nav-company { 
+
+    background-color: var(--dex-grey);
+}
+ul.sub-nav-company li:hover {
+
+    background-color: var(--dex-red);
+
+}
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------ */
+/* :focus if button clicked ( soft., it , company )
+/* ------------------------------------------------------ */
+
+/* visble sub of software, it  */
+button.button-nav1-software:focus ~ ul.sub-nav-software ,
+button.button-nav1-it:focus ~ ul.sub-nav-it , 
+button.button-nav1-company:focus ~ ul.sub-nav-company {
+
+    visibility: visible;
+    margin-top: 5px;
+}
+
+
+
+
+
+/* ------------------------------------- */
+/* Sub Sub - Navigation
+/* ------------------------------------- */
+
+ul.sub-sub-software {
+
+    visibility: hidden; 
+
+    position: absolute;
+    top:0px;
+    /* because 1st ul same top distance */
+    margin-top:10px;
+    /* not 100% because of margin goes deeper */
+    height: 96%;
+   
+    /* left space from 1 sub ul nav */
+    margin-left: 431px;
+
+    border-right: .1px solid rgba(192,192,192,0.3);
+
+    
+    /* delete default ul pos & style */
+    list-style-type: none;
+
+    padding-left: 0px;
+}
+
+
+ul.sub-sub-software li.sub-sub-nav-1st {
+
+    padding-top:22px;
+    padding-bottom: 22px;
+    padding-left:22px;
+    padding-right: 32px;
+
+    width: 400px; 
+}
+
+
+/* ------------------------------------------------------ */
+/* :hover effecs - ( static only for template )
+/* software sub , 2,3 li only have more sub menues
+/* ------------------------------------------------------ */
+
+/* ------------------------------------- */
+/* :hover - visble sub sub 
+/* ------------------------------------- */
+ul.sub-nav-software li.sub-nav-1st:nth-child(2):hover ul.sub-sub-software {
+
+    visibility: visible;  
+}
+
+ul.sub-nav-software li.sub-nav-1st:nth-child(3):hover ul.sub-sub-software {
+
+    visibility: visible;    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------- */
+/* Sub Sub Sub - Navigation
+/* ------------------------------------- */
+
+
+/* Info: */
+/* parent is sub sub so we dont need height 96%
+/* because if we do height 100% than it goes
+/* from the parent by 96% height */
+
+ul.sub-sub-sub-software { 
+
+    /* default unshown only by hover show */
+    visibility: hidden;
+
+    position: absolute;
+    top:0px;
+   
+    height: 100%;
+   
+    /* left space from 1 sub ul nav */
+    margin-left: 431px;
+
+    border-right: .1px solid rgba(192,192,192,0.3);
+
+    /* delete default ul pos & style */
+    list-style-type: none;
+
+    padding-left: 0px;
+}
+
+
+ul.sub-sub-sub-software li.sub-sub-sub-li {
+
+    padding-top:22px;
+    
+    padding-bottom: 22px;
+    padding-right: 16px;
+    padding-left:22px;
+
+    width: 400px; 
+}
+
+
+
+/* ------------------------------------- */
+/* :hover - visble sub sub sub 
+/* ------------------------------------- */
+
+ul.sub-sub-software li.sub-sub-nav-1st:nth-child(1):hover ul.sub-sub-sub-software {
+
+    visibility: visible;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------*/
+/* Main ul - li ( buttons )
+/* : searchbar
+/* : company logo
+/* -------------------------------------*/
+
+
+
+
+
+/* -------------------------------- */
+/* searchbar 
+/* -------------------------------- */
+
+/* search-bar inside position */
+li.li-1st:nth-child(4){
+
+    /* bring middle and to the right */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    margin-right: 16px;
+}
+
+
+/* search-bar textfeld styling */
+input.search-bar { 
+
+    width: 80px;
+    /*transition effect only work if it will focus */
+    transition: all .3s ease-in-out;
+
+
+    border-radius: 8px;
+
+    /* inside styling */
+    color:var(--dex-grey);
+    font-size: 1.3em;
+    padding: 16px;
+
+    /* delete default border */
+    border: 4px solid var(--dex-grey);
+}
+
+/* :focus searchbar will slowly grow */
+input.search-bar:focus {  width: 300px;}
+
+   
+.icon-magnifying-glass { 
+
+    width: auto;
+    height: 2.8em;
+
+    margin-top: 10px;
+    padding-left: 12px;
+
+    /* simulate click cursor */
+    cursor: pointer;
+}
+
+
+
+
+
+/* -------------------------------- */
+/* company
+/* -------------------------------- */
+
+
+/* search-bar inside position */
+li.li-1st:nth-child(5){
+
+    /* bring middle and to the right */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    padding-right: 22px;
+}
+
+/* icon company */ 
+.icon-company {
+
+    width: auto;
+    height: 4em;
+
+    /* right space */
+    margin-left: 24px;
+}
+
+
+/* better position correction to company logo */
+.pos-company-title  {
+
+    padding-top:8px;
+}
+
+/* title of company */
+.nav-company-title { 
+
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+/* sub title of company */
+.nav-company-sub-title {
+
+    font-size: .8em;
+    text-align: right;
+}
+
+
+/* hover company logo */
+li.li-1st:nth-child(5):hover {
+
+    cursor: pointer;
+    background-color: var(--light2-grey);
+}

@@ -1,0 +1,174 @@
+/* ---------------------------------------------------------- */
+/* #2 - special effects
+/* ---------------------------------------------------------- */
+/* : horizontal nav bar , hover , click - effect by checkbox
+/* solution , :focus - effect to close content by clicking
+/* other area  
+/* ---------------------------------------------------------- */
+
+
+div.accordion {  background-color: var(--light2-grey);}
+
+div.section-inside { margin: 10px; padding-bottom: 10px; padding-top: 10px; }
+
+
+/* --------------------------------------- */
+/* Section - header 
+/* --------------------------------------- */
+
+.flex-section-header { 
+
+    display: flex;
+    padding: 10px;
+
+   
+    /* put deep left , put deep right */
+    justify-content: space-between;
+
+    background-color: var(--moon-dark);
+    color:wheat;
+
+    font-size: .8em;
+}
+
+/* h4 and + / - operator */
+h4.section-h4 , p.txt-operator-plus, p.txt-operator-minus {
+
+    /* delete default h4,p margin */
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+        
+p.txt-operator-plus { padding-right: 12px; }
+
+/* because minus and depents on font-size */
+p.txt-operator-minus { padding-right: 15px; }
+
+
+
+
+
+
+/* --------------------------------------- */
+/* Section - header hover , no markable
+/* --------------------------------------- */
+
+
+div.flex-section-header:hover { background-color: wheat; color:black; transition: .3s;}
+
+
+/* unshown input checkbox */
+input[id^="checkbox-"] { display: none;}
+
+
+
+/* dont allow to mark label , because only button function */
+label[class="label-accordion-header"] {
+
+    /* animate click hand */
+    cursor: pointer;
+
+    /* because of div the text will be marked */
+    /* dont allow to mark header links */
+    /* different browser solution */
+    -ms-user-select: None;
+    -moz-user-select: None;
+    -webkit-user-select: None;
+    user-select: None;
+}
+
+
+
+
+/* --------------------------------------- */
+/* checkbox - click handling
+/* --------------------------------------- */
+
+/* default unshown p */
+p.section-p { display:  none; }
+
+/* default unshown paragraph -  */
+p.txt-operator-minus { display: none; }
+
+
+
+
+/* --------------------------------------- */
+/* #1,2,3 - checkbox - click handling
+/* --------------------------------------- */
+
+
+/* --------------------------------- */
+/* click 1,2,3 - section header (+)  */
+/* --------------------------------- */
+
+input#checkbox-1:checked ~ p.section-p , 
+input#checkbox-2:checked ~ p.section-p ,
+input#checkbox-3:checked ~ p.section-p{  display: block; }
+    
+   
+
+ 
+
+/* --------------------------------- */
+/* clicked -> + - operator unshown   */
+/* --------------------------------- */
+
+input#checkbox-1:checked ~ label > div h4 ~ p.txt-operator-plus,
+input#checkbox-2:checked ~ label > div h4 ~ p.txt-operator-plus,
+input#checkbox-3:checked ~ label > div h4 ~ p.txt-operator-plus {  display: none; }
+
+/* --------------------------------- */
+/* clicked -> minus - operator shown */
+/* --------------------------------- */
+
+input#checkbox-1:checked ~ label > div h4 ~ p.txt-operator-minus,
+input#checkbox-2:checked ~ label > div h4 ~ p.txt-operator-minus,
+input#checkbox-3:checked ~ label > div h4 ~ p.txt-operator-minus {  display: block; }
+
+/* ----------------------------------------------- */
+/* if checked is like set -> hover style aktivated */
+/* ----------------------------------------------- */
+
+input#checkbox-1:checked ~ label > div,
+input#checkbox-2:checked ~ label > div,
+input#checkbox-3:checked ~ label > div {
+    
+    background-color: wheat; color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------- */
+/* Section - p
+/* --------------------------------------- */
+
+p.section-p { 
+
+    background-color: var(--white);
+    font-size: .8em;
+
+    padding-left:22px;
+    padding-right:22px;
+
+    /* default margin top , bottom */
+    margin-top:0px;
+    margin-bottom: 0px;
+
+    padding-top:10px;
+    padding-bottom: 10px;
+
+}
+
+

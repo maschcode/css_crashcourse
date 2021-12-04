@@ -1,0 +1,364 @@
+/* ---------------------------------------------------------- */
+/* #3 - SPECIAL EFFECTS - sidenavs
+/* ---------------------------------------------------------- */
+/* : sidenav - overlay
+/* : sidenav - push 
+/* : sidenav - push opacity 
+/* : sidenav - full-width
+/* ---------------------------------------------------------- */
+
+
+
+/* ----------------------------------------------------- */
+/* Radio Sidenavs Boxes                                  */
+/* ----------------------------------------------------- */
+
+
+/* unshown radio button box - but functonalities works */
+input[name="sidenav"] {  display: none; }
+    
+
+/* label from radio box */    
+label[for^="sidenav-"] { 
+
+    background-color: green;
+    color:white;
+    font-weight:bold;
+    
+    padding:10px;
+    
+    /* css-trick to make distance by small displays */ 
+    line-height: 3em;
+}
+
+/* hover effect over label x-close */
+label[for^="sidenav-"]:hover {
+
+    background-color: grey;
+    color:black;
+    cursor: pointer;
+}
+
+/* only selected direct neighbour */
+input[name="sidenav"]:checked + label { 
+    
+    background-color: grey;
+    color:black;
+}
+
+
+
+/* --------------------------------------- */
+/* Mini Web-Page
+/* --------------------------------------- */
+
+div.special-3-pos { 
+    
+    background-color: var(--light2-grey);
+    height: 400px;
+
+    margin-top:42px;
+}
+
+div.header { 
+    
+    background-color: var(--dark-sea-blue);
+    color:white;
+
+    height:50px;
+
+    /* bring pos in the middle */
+    display: flex;
+    align-items: center;
+
+    padding-left:12px;
+    padding-right: 12px;
+}
+
+p.p-content { 
+
+    padding-left:6px;
+    padding-right: 6px;
+
+    font-size: .8em;
+}
+
+
+
+
+/* --------------------------------------- */
+/* Navigation Open Box ( ul li )
+/* --------------------------------------- */
+
+
+/* nav link list */
+ul.ul-sidenav {
+
+    /* overlay mini-web-page */
+    position: absolute;
+ 
+    background-color: var(--moon-dark);
+    color:white;
+    list-style-type: none;
+    
+    /* start pos of nav from left to right */
+    width: 0px;
+    height: 400px;
+
+    transition: width .3s;
+    
+    /* delete default ul margin top,bottom */
+    margin-top: 0px;
+    margin-bottom: 0px;
+   
+    /* allows to exactly width */
+    padding-left:0px;
+    padding-right:0px; 
+
+    /* extra high to be save of overlay priority */
+    /* that means ul lays all over elements if it is open */
+    z-index: 999;
+}
+
+
+
+
+/* ---------------------------- */
+/* x - Checkbox
+/* ---------------------------- */
+
+
+/* Checkbox icon unshown but functionality works */
+input#chk-close { display: none; }
+
+    
+/* make pos. absolute to be over ul to handle correct interaction */
+label[for="chk-close"] { 
+
+    /* basically unshown x-checbbox */
+    display: none;
+
+    font-weight:bold;
+    text-align: right;
+}
+
+/* more top distance from x-checkbox */
+ul.ul-sidenav li:first-child {   padding-top: 20px; }
+
+
+/* hover effect by x-button */
+label[for="chk-close"]:hover {
+
+    color:yellow;
+    cursor: pointer;
+}
+
+
+
+
+/* ---------------------------- */
+/* li & hover - effects 
+/* ---------------------------- */
+
+
+/* li style */
+ul.ul-sidenav li {
+
+    /* basically unshown li - items */
+    display: none;
+
+    /* pos of li */
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+    padding-left:30px;
+    padding-right:20px;
+}
+
+
+/* li hover */
+ul.ul-sidenav li:hover { color:yellow; }
+
+    
+
+
+
+
+/* -------------------------------------------------------- */
+/* Different Navigation Handling
+/* -------------------------------------------------------- */
+
+
+
+/* show by every radio button checked the nav-window with x-close labe */
+input[name="sidenav"]:checked ~ div label[for="chk-close"]  , 
+input[name="sidenav"]:checked ~ div ul.ul-sidenav li { 
+
+    display: block; 
+}
+
+
+
+/* open windows-window for 1-3 radio buttons */
+input#sidenav-overlay:checked ~ div ul.ul-sidenav ,
+input#sidenav-push:checked ~ div ul.ul-sidenav , 
+input#sidenav-push-opacity:checked ~ div ul.ul-sidenav { 
+   
+    width: 150px;
+    height: 400px;              
+}
+
+
+
+
+
+
+/* ---------------------------------*/
+/* sidenav-overlay 
+/* ---------------------------------*/ 
+
+
+
+
+
+
+
+
+
+
+  
+    
+
+
+/* --------------------------------------- */
+/* 2. Sidenav push ( off-canvas )
+/* --------------------------------------- */
+
+
+/* push main content to the right as max navwindow width */
+input#sidenav-push:checked ~ div.special-3-pos div.opacity-content, 
+input#sidenav-push-opacity:checked ~ div.special-3-pos div.opacity-content {
+
+    padding-left: 150px;
+     
+}
+
+/* transition effect for push & push opacity */
+/* only works if go for padding-left: 150px because that the change */
+div.opacity-content {  transition: all .3s ease-out;   }
+
+
+
+
+
+/* --------------------------------------- */
+/* 3. Sidenav push w/opacity
+/* --------------------------------------- */
+
+input#sidenav-push-opacity:checked ~ div.special-3-pos div.opacity-content { 
+
+    background-color: grey;
+    opacity: .5;
+    height: 100%;
+   
+   
+   
+}
+
+
+
+
+
+/* --------------------------------------- */
+/* Sidenav full-width
+/* --------------------------------------- */
+
+/* our nav is absolute and absoulte goes over elementriver */
+/* only e.g relative is in elemenriver  and can be used of 100% */
+
+input#sidenav-full:checked ~ div ul { 
+
+    position: relative;
+    transition: all .3s ease-out;
+   
+    width: 100%;
+    height: 400px;
+    
+}
+
+input#sidenav-full:checked ~ div div.opacity-content { 
+
+    transition-delay: 5s;
+    display:none;
+   
+}
+
+
+input#sidenav-full:checked ~ div ul li  { 
+
+    text-align: center;
+}
+
+input#sidenav-full:checked ~ div label[for="chk-close"] {
+   
+   margin-left:150px;
+   text-align: center;
+    
+}
+
+/* input#sidenav-full:checked ~ div div.opacity-content {
+
+    visibility: hidden;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

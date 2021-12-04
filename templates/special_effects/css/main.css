@@ -1,0 +1,184 @@
+/* ---------------------------------------------------------- */
+/* MAIN - CSS Styles
+/* ---------------------------------------------------------- */
+/* - grid layouts 
+/* - basic table style e.g infobox header etc. 
+/* - text style & positions
+/* ---------------------------------------------------------- */
+
+
+/* ----------------------------------- */
+/* Often using css - settings 
+/* ----------------------------------- */
+
+.display-ib { display: inline-block; } 
+
+.mini-title {
+
+    font-size: .9em;
+    font-style: italic;
+    padding-left:.5em;
+}
+
+.title-pos { padding-right: .5em }
+
+
+
+/* ------------------------------------- */
+/*  Main - Grid Layout                   */
+/* ------------------------------------- */
+
+#grid-main {
+
+    
+
+    display: grid;
+    grid: auto / 1fr 1fr;
+    gap: 1em;
+  
+}
+
+#grid-main > div {
+
+    width: 100%;
+
+    /* content pos */
+    vertical-align: top;
+    margin-bottom: 2em;
+}
+
+
+
+
+
+/* ------------------------------------- */
+/* Title - Infobox | 1. DIV              */
+/* ------------------------------------- */
+
+#grid-main > div > div:first-child {
+
+    background-color: var(--moon-dark);
+    color: var(--skin-brown);
+
+    padding:.5em;
+    font-size: .9em;
+}
+
+
+/* -------------------------------------------- */
+/* Prototyp Box - Infobox | 2. DIV              */
+/* -------------------------------------------- */
+
+#grid-main > div > div:nth-child(2) {
+
+   height: 300px;
+    background-color: var(--skin-brown);
+
+    padding-top:.5em;
+    margin-top: .5em;
+
+    font-size: .9em;
+} 
+
+
+/* ------------------------------------- */
+/*  Mini Prototyp - Grid Layout          */
+/* ------------------------------------- */
+
+/* grid prototyp layout 2.cols */
+#grid-proto {
+
+    display: grid;
+    grid: auto / 1fr 1.5fr;
+
+    padding-top: .5em;
+    padding-right: .5em;
+    padding-left: .5em;
+    padding-bottom: 40px;
+    
+}
+
+
+
+
+/* 2.col , 2.div  */
+/* ( style pos for img prototyp ) */
+#grid-proto > div:nth-child(2) {
+
+    /* teq. to put in middle right */
+    display: flex;
+    justify-content: right;
+   
+
+
+}
+
+
+
+
+
+
+/* -------------------------------------------- */
+/* Prototyp Box - Infobox | 2. DIV              */
+/* -------------------------------------------- */
+
+
+/* Prototyp img def. sizes */
+.img-size-proto-basic {
+
+    width: 100%;
+    height: auto;
+}
+
+.img-size-proto-2 { 
+
+    width: 100%;
+    height: 200px;
+}
+
+.img-size-proto-3 {
+
+    width: 60%;
+    height: 300px;
+}
+
+.img-size-proto-5 { 
+
+    width: 100%;
+    height: 150px;
+}
+
+.img-size-proto-7 { 
+
+    width: 100%;
+    height: 130px;
+}
+
+.img-size-proto-big-width {
+
+    width: auto;
+    height: 10em;
+}
+
+
+
+
+/* -------------------------------------------- */
+/* Solution Box - Infobox | 3. DIV              */
+/* -------------------------------------------- */
+
+#grid-main > div > div:nth-child(3) {
+
+    height: auto;
+
+    padding:.5em;
+
+    /* styling */
+    font-size: .9em;
+    
+}
+
+
+
+
+

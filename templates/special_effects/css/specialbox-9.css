@@ -1,0 +1,271 @@
+/* ---------------------------------------------------------- */
+/* #9 - SPECIAL EFFECTS - Forms
+/* ---------------------------------------------------------- */
+
+
+/* Main Area where Nav Image City is inside */
+div.special-9-pos {
+
+    height: auto;
+    width: 100%;
+    height: 600px;
+
+    background-color: var(--light2-grey);
+
+    position: relative;
+  
+    color:black;
+
+   
+
+    
+}
+
+
+/* flexlayout for hamburger icon & search modal icon */
+
+#flex-icon-search {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+
+}
+
+
+
+
+
+
+
+/* ---------------------------------------------------------- */
+/* css animated hamburger icon
+/* ---------------------------------------------------------- */
+
+/* container where icon is inside */
+.menu-container { 
+
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* create our bar lines which is hamburger icon & x for close */
+.bar-1 , .bar-2, .bar-3 {
+
+    background-color: var(--moon-dark);
+    width: 30px;
+    height: 5px; 
+
+    /* make distance from each ohter */
+    margin: 6px 0px;
+
+    /* if this go for an changing style, then do this transition time*/
+    transition: .4s;   
+}
+
+/* the styling art to make the 3-bars to an x */
+/* we give ur styling an extra class name for java script to open */
+/* this class name is our toggle name to activate this effect */
+
+/* left down line */
+.change .bar-1 {
+
+    transform: rotate(-45deg) translate(-9px, 6px);
+ }
+
+/* middle line unshown */
+/* work with opacity is easier than display none */
+.change .bar-2 { opacity: 0; }
+
+/* right up line */
+.change .bar-3 { 
+
+    transform: rotate(45deg) translate(-8px, -8px);
+
+}
+
+
+
+
+/* ---------------------------------------------------------- */
+/* search modal box 
+/* ---------------------------------------------------------- */
+
+
+
+/* Background Opacity & Modal Box */
+
+.model-area {
+
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 500px; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* modal box content */
+
+.modal-content { 
+
+  background-color: var(--dex-red);
+  color:white;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+
+  height: 100px;
+
+  box-shadow: 5px 10px wheat;
+
+  
+  width: 80%;
+}
+
+
+/* The Close Button */
+.close-search-modal {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close-search-modal:hover,
+.close-search-modal:focus {
+  color: #888;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+.search-icon {
+
+    width: 2em;
+    height: 2em;
+ 
+}
+
+button#open-search-modal { 
+
+    width: 3.5em;
+    height: 3.5em;
+
+    margin-right: 22px;
+
+    padding-top:5px;
+
+    background-color: wheat;
+
+    border: 3px solid var(--dex-grey);
+}
+
+button#open-search-modal:hover {
+
+    background-color: var(--light2-grey);
+    cursor: pointer;
+}
+
+.search-modal-text {
+
+    padding: 12px;
+    font-size: 1.2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------- */
+/* styling form elements form
+/* ---------------------------------------------------------- */
+
+.form-area {
+
+    width: 80%;
+
+    margin-top: 40px;
+
+    /*bring content centered */
+    margin-left:auto;
+    margin-right:auto;
+
+    /* inside distance */
+    padding: 20px 10px;
+
+    border-top: 3px solid black;
+
+    font-size: .8em;
+   
+}
+
+div.grid-col-3 { 
+
+    display: grid;
+    grid: auto / 1fr 1fr 1fr;
+
+}
+
+div.grid-col-3 fieldset {
+
+    display: block;
+    margin-top:20px;
+   
+}
+
+div.form-area form fieldset input + label { 
+
+    font-size: .7em;
+    font-weight: bold;
+}
+
+/* defines all fielsets are block element so under each other */
+div.form-area form fieldset textarea { 
+
+   display: block;
+}
+
+
+/* last fieldseit more margin-top distance */
+div.form-area form fieldset:last-child { 
+
+    margin-top: 20px;
+}
+
+
+.lh { 
+
+    font-weight: bold;
+    color: var(--dex-red);
+
+    font-size: .7em;
+}

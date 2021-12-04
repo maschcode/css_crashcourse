@@ -1,0 +1,429 @@
+/* ---------------------------------------------------------- */
+/* #4 - SPECIAL EFFECTS - tran. , anima. 
+/* ---------------------------------------------------------- */
+/* : transition
+/* : transform 2D , 3D 
+/* : animation
+/* ---------------------------------------------------------- */
+
+
+div.div-box-4 {
+
+    padding: 8px;
+}
+
+div.div-title-4 { 
+
+    background-color: var(--skin-brown);
+    padding:8px;
+    font-weight: bold;   
+}
+
+div.div-content-4 {
+
+    background-color: var(--light2-grey);
+    padding: 8px;
+}
+
+
+span.css-animation-li { 
+
+    font-weight: bold;
+
+    display: inline-block;
+    padding-top:12px;
+    padding-bottom:12px;
+}
+
+/* ----------------------------------------------------- */
+/* Transitions                                           */
+/* ----------------------------------------------------- */
+
+
+
+/* ------------------------------------ */
+/* Box - 1                              */
+/* ------------------------------------ */
+
+div.box-1 {
+
+    background-color: green;
+    color:white;
+
+    width: 100px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* transitions handling by getting bigger */
+    transition: width 2s , height 4s;
+}
+
+div.box-1:hover { 
+
+    width: 300px;
+    height: 250px;
+
+}
+
+
+/* ------------------------------------ */
+/* Box - 2                              */
+/* ------------------------------------ */
+
+div.box-2 {
+
+    background-color: indigo;
+    color:white;
+
+    width: 150px;
+    height:50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 12px;
+
+    /* transition width slow horizontal effect */
+    transition: width 2s;
+}
+
+
+
+div.box-lineare { transition-timing-function: linear; }
+
+div.box-ease { transition-timing-function: ease; }
+
+div.box-ease-in { transition-timing-function: ease-in; } 
+
+div.ease-out { transition-timing-function: ease-out; }
+
+div.ease-in-out { transition-timing-function: ease-in-out; }
+
+
+div.box-2:hover {
+
+    width: 100%;
+}
+
+
+
+/* ------------------------------------ */
+/* Box - 3                              */
+/* ------------------------------------ */
+
+div.box-3 {
+
+    background-color: firebrick;
+    color:white;
+
+    width: 100px;
+    height:100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 12px;
+
+   
+    /* transform rotate process in 2s */
+    transition: width 1s, height 1s, transform 1s;
+}
+
+
+div.box-3:hover {
+
+    /* transition wait first 3s  */
+    transition-delay: 3s;
+    width: 200px;
+    height: 200px;
+    transform: rotate(180deg);
+  }
+
+
+
+
+/* ------------------------------------ */
+/* Box - 4                              */
+/* ------------------------------------ */
+
+div.box-4 {
+
+    background-color: gold;
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 12px;
+
+    /* transition effect will active if obj. grow/shrink */ 
+
+    /* only height get an duration time of 5s */
+    /* tipp: if u put in porperty height and width and u 
+    want e.g grow same size u dont need this because 
+    normal transition with seconds is engoug, the improtant
+    thing is the value from px to another px-value */
+
+    transition-property: height;
+    transition-duration: 5s
+
+}
+
+
+div.box-4:hover {
+
+    width: 200px;
+    height: 200px;
+   
+  }
+
+
+
+
+/* ------------------------------------ */
+/* Box - 5                              */
+/* ------------------------------------ */
+
+
+
+div.box-5 {
+
+    background-color: blue;
+    color:white;
+
+    width: 150px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 12px;
+
+    /* 50px right , 100px down */
+    transform: translate(150px, 20px);
+    
+   
+}
+
+div.box-6 {
+
+    background-color: black;
+    color:white;
+
+    width: 150px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 12px; 
+   
+}
+
+
+/* ------------------------------------ */
+/* Box - 5                              */
+/* ------------------------------------ */
+
+.deg-0 { transform: rotate( 0deg ) }
+
+.deg-45 { transform: rotate( 45deg ) }
+
+.deg-90 { transform: rotate( 90deg ) }
+
+.deg-180 { transform: rotate( 180deg ) }
+
+.deg-360 { transform: rotate( 360deg ) }
+
+
+.deg-minus-45 { transform: rotate( -45deg ) }
+
+
+
+.scale-1-1 {  transform: scale(1,1);  }
+
+.scale-2-2 {  transform: scale(2,2);  }
+
+.scale-3-1 {  transform: scale(3,1);  }
+
+
+
+
+
+
+/* ------------------------------------ */
+/* Box - 6                              */
+/* ------------------------------------ */
+
+.skew-template { 
+
+    /* 30deg in x-acis and -10deg in y-axis left side */
+    transform: skew( 30deg, -10deg);
+}
+
+
+/* ------------------------------------ */
+/* Box - 7                              */
+/* ------------------------------------ */
+
+
+.matrix { 
+
+    /* matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+    /* 1. scale x = 1
+    /* 2. skewY = 0 - yaxis 
+    /* 3. skewX = 0.5 - xaxis 
+    /* 4. scale y = 1
+    /* 5. translate x, so actually pos. 150px right
+    /* 6. translate y, so new pos. 0px down  */
+    transform: matrix(1, 0, 0.5, 1, 150, 0);
+}
+
+
+
+/* ------------------------------------ */
+/* Box - 8 ( 3D )                        */
+/* ------------------------------------ */
+
+
+
+.rotate-3d { 
+
+    /* 150deg. on x-axis "over head" */
+    transform: rotateX(150deg);
+    /* 150deg. on y-axis "e.g text right to left" */
+    transform: rotateY(150deg);
+
+    /* diagonal z-axis "from right to left" */
+    transform: rotateZ(150deg); 
+}
+
+
+
+
+
+/* --------------------------------------- */
+/* Keyframes - Animation
+/* --------------------------------------- */
+
+
+/* ---------------------------- */
+/* Box - 1                      */
+/* ---------------------------- */
+
+
+/* keyframe animation name */
+/* animation name set to css element */
+@keyframes color-change {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+
+
+.box-key-1 {
+
+    width: 80px;
+    height: 80px;
+
+    border: 1px solid black;
+
+    /*background-color: red; */
+    animation-name: color-change;
+    
+    /* time how long animation goes */
+    animation-duration: 4s;
+
+    /* 100 times */
+    animation-iteration-count: 100;
+    
+    padding:12px;
+}
+
+
+
+
+/* ---------------------------- */
+/* Box - 2                      */
+/* ---------------------------- */
+
+@keyframes box {
+
+    /* 0% begining animation red and go in pos lef:0px, top:0px */
+    0%   {background-color:red; left:0px; top:0px;}
+    /* 25% of the duration time bg-color is yellow and go left 200px, top 0px */
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:30px;}
+    75%  {background-color:green; left:0px; top:30px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+
+
+.box-key-2 {
+
+    /* work with keyframe animation */
+    animation-name: box;
+    animation-duration: 4s;
+    /* 100 times */
+    animation-iteration-count: 100;
+
+    background-color: red;
+    position: relative;
+
+    width: 50px;
+    height: 50px;
+
+}
+
+.direction-alternate-reverse { animation-direction: alternate-reverse;}
+
+
+
+
+
+
+/* --------------------------------------- */
+/* Navigation Open Box ( ul li )
+/* --------------------------------------- */
+
+
+
+
+/* ---------------------------- */
+/* x - Checkbox
+/* ---------------------------- */
+
+
+
+
+
+/* ---------------------------- */
+/* li & hover - effects 
+/* ---------------------------- */
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+

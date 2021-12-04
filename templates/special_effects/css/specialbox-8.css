@@ -1,0 +1,128 @@
+/* ---------------------------------------------------------- */
+/* #7 - SPECIAL EFFECTS - Nav City Image
+/* ---------------------------------------------------------- */
+
+
+/* Main Area where Nav Image City is inside */
+div.special-8-pos {
+
+    height: auto;
+    width: 100%;
+    height: 600px;
+
+    background-color: var(--light2-grey);
+  
+    color:black;
+
+    overflow-y: scroll;
+
+    
+}
+
+
+/* ---------------------------------------------------------- */
+/* Header Topic
+/* ---------------------------------------------------------- */
+
+#flex-header-topic { 
+
+    display: flex;
+    align-items: center;
+
+    height: 150px;
+
+    position: sticky;
+    top:0;
+
+   
+    color:white;
+    background-color: var(--dex-red);
+
+    
+
+}
+
+#flex-header-topic img , 
+#flex-header-topic img + div { 
+
+    padding:22px;
+}
+
+
+/* text size content */
+.header-title { 
+
+    font-weight: bold;
+    font-size: 1.3em;
+    padding-bottom: 14px;
+}
+
+.header-sub-title {
+
+    font-size: .8em;
+    width: 70%;
+    line-height: 1.5em;
+    opacity: .6;
+}
+
+
+/* cloud - image */
+.img-cloud { 
+
+    width: 4em;
+    height: 4em;
+}
+
+
+
+
+
+
+
+/* ---------------------------------------------------------- */
+/* Load Box
+/* ---------------------------------------------------------- */
+
+
+
+.empty-load-box {
+
+    background-color: var(--moon-dark);
+    height: 15px;
+
+    position: sticky;
+    top:150px;
+    
+}
+
+#loading-bar { 
+
+    background-color: wheat;
+    height: 15px;
+    position: sticky;
+    top:150px;
+
+   
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------- */
+/* Main long Content
+/* ---------------------------------------------------------- */
+
+
+.main-content-s8 { 
+
+
+    padding:16px;
+
+}

@@ -1,0 +1,218 @@
+/* ---------------------------------------------------------- */
+/* #7 - SPECIAL EFFECTS - Nav City Image
+/* ---------------------------------------------------------- */
+
+
+/* Main Area where Nav Image City is inside */
+div.special-7-pos {
+
+    height: auto;
+    width: 100%;
+  
+   
+  
+    background-color:var(--dex-red);
+    color:white;
+}
+
+
+/* ---------------------------------------------------------- */
+/* Complete Image Box
+/* ---------------------------------------------------------- */
+
+
+/* --------------------------------------------------- */
+/* Grid , Flex - Layouts for postions
+/* ----------------------------------------------------*/
+
+
+/* ------------------------------------ */
+/* Grid - Radio Box Layout ( Label )
+/* ------------------------------------ */
+
+/* reason: working radio box depends on html structure
+/* so label should be down */
+
+#grid-radio-label { 
+
+    display: grid;
+    grid: auto / repeat( 5, 1fr);
+    background-color: var(--dex-grey);
+
+    border-top: 3px solid wheat;
+}
+
+#grid-radio-label label {
+
+    padding:16px;
+
+}
+
+
+/* ------------------------------------ */
+/* Grid - Img Text Content (2.cols)
+/* ------------------------------------ */
+div.grid-image-content { 
+
+    display: grid;
+    grid: auto / 1.8fr 1fr;
+
+    padding: 12px;
+
+    font-size: .8em;
+}
+
+/* city - header - title */
+.city-header-title {
+
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* style line */
+div.grid-image-content > div:nth-child(1) {
+
+    border-right: 1px solid wheat;
+    padding-right: 12px;
+}
+
+
+/* contact us pos centered */
+div.grid-image-content div:nth-child(2) {
+
+    /* content centered */
+    margin-left:auto;
+    margin-right: auto;  
+}
+
+/* delete empty break */
+ul.city-contact li:nth-child(4) { list-style-type: none;}
+
+
+
+
+
+/* --------------------------------------------------- */
+/* Radio Box 
+/* ----------------------------------------------------*/
+
+/* default radio box unshown - but functioanlities works */
+input[name="city"] { display: none; }
+
+/* default all div with city- unshown */
+div#city-essen , 
+div#city-mannheim ,
+div#city-munich ,
+div#city-hamburg ,
+div#city-berlin { 
+    display: none;
+}
+
+
+
+
+
+/* --------------------------------------------------- */
+/* Radio Box - Hover ( :hover )
+/* ----------------------------------------------------*/
+
+label.label-city:hover { 
+
+    background-color: var(--dex-red);
+    color:white;
+
+    transition: .2s;
+    cursor: pointer;
+
+}
+
+
+/* --------------------------------------------------- */
+/* Radio Box - Handling ( :checked )
+/* ----------------------------------------------------*/
+
+
+/* set checked radiobox grey background-color */
+input[id="essen"]:checked ~ div#grid-radio-label label[for="essen"] ,
+input[id="mannheim"]:checked ~ div#grid-radio-label label[for="mannheim"] , 
+input[id="munich"]:checked ~ div#grid-radio-label label[for="munich"] , 
+input[id="hamburg"]:checked ~ div#grid-radio-label label[for="hamburg"] ,
+input[id="berlin"]:checked ~ div#grid-radio-label label[for="berlin"] {
+
+    background-color: var(--dex-red);
+    color:white;
+}
+
+
+
+/* show essen image */
+input#essen:checked ~ div#city-essen {
+
+    display: block;
+    margin-bottom:20px;
+}
+
+/* show mannheim image */
+input#mannheim:checked ~ div#city-mannheim {
+
+    display: block;
+    margin-bottom:20px;
+}
+
+
+/* show munich image */
+input#munich:checked ~ div#city-munich {
+
+    display: block;
+    margin-bottom:20px;
+}
+
+/* show munich image */
+input#hamburg:checked ~ div#city-hamburg {
+
+    display: block;
+    margin-bottom:20px;
+}
+
+
+/* show munich image */
+input#berlin:checked ~ div#city-berlin {
+
+    display: block;
+    margin-bottom:20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------- */
+/* Image Box - Content
+/* ----------------------------------------------------*/
+
+
+/* basic city img size */
+img.img-city-size { 
+
+   width: 100%;
+   height: auto;
+}
+
+
+
+/*---------------- */ 
+/* img sizes       */
+/*---------------- */ 

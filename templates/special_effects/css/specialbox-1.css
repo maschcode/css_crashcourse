@@ -1,0 +1,257 @@
+/* ---------------------------------------------------------- */
+/* #1 - special effects
+/* ---------------------------------------------------------- */
+/* : horizontal nav bar , hover , click - effect by checkbox
+/* solution , :focus - effect to close content by clicking
+/* other area  
+/* ---------------------------------------------------------- */
+
+
+/* infobox where horizontal navbar is inside */
+div.infobox-1-pos { 
+
+    margin-top:0px;
+    height: 280px;
+    background-color: var(--light2-grey);
+}
+
+
+/* --------------------------------------------- */
+/* Style - Horizontal Nav Bar                    */
+/* --------------------------------------------- */
+
+div.nav-horizontal {
+
+    background-color: var(--moon-dark);  
+    height:auto;   
+   
+}
+
+
+/* ---------------------- */
+/* ul - li (parent)       */
+/* ---------------------- */
+
+ul.ul-nav {
+
+    /* delete default pos styling of ul */
+    margin: 0px;
+    padding-left:0px;
+    list-style-type: none;
+
+    /* li elements are inline block */
+    /* different content height different height */
+    /* solution: bring it to flex same height */
+    display: flex; 
+    
+}
+
+
+/* all nav-title-links */
+ul.ul-nav > li div:first-child { 
+    
+    width: 100px;
+
+    background-color: var(--harvard-red);
+    color:var(--white);
+    
+    /* 16px(def. left) + 8px (padding li) */
+    padding-left: 24px;
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 16px;
+
+    /* because of div the text will be marked */
+    /* dont allow to mark header links */
+    /* different browser solution */
+    -ms-user-select: None;
+    -moz-user-select: None;
+    -webkit-user-select: None;
+    user-select: None;
+}
+
+
+
+
+/* ---------------------- */
+/* ul li > ul li (sub)    */
+/* ---------------------- */
+
+
+/* all sub links content box  */
+ul.sub-list {
+
+
+    position: absolute;
+
+    background-color: var(--light-grey);
+    font-size: .8em;
+   
+    padding-bottom: 8px; 
+    padding-left:0px;
+
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+    /* default sub link contents unshown */
+    /* primary all sub-list */
+    display: none; 
+
+}
+
+
+/* all delete default pos of ul li > ul li */ 
+ul.sub-list > a > li { 
+
+    list-style-type: none;
+
+    /* box min as li parent width */
+    min-width: 100px;
+
+
+    padding-left: 24px;
+    padding-top: 10px;
+    padding-right:16px;
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid var(--light2-grey);
+}
+
+
+
+
+
+/* --------------------------------------------------- */
+/* Styling - input , label for first nav link 
+/* --------------------------------------------------- */
+
+/* all input which belong to navbar style unshown  */
+/* input style could be everything of html form elements */
+/* e.g u choose checkbox , then unshown the checkbox element */
+    
+
+
+/* click solution - input nav-1 checkbox for navbar title link */
+
+input.nav-1-checkbox {
+
+    display: none; 
+}
+
+/* :focus solution - input nav-1 button for navbar title link */
+input.submit-nav-1 {
+
+    width: 130px;
+    height: 100%;
+
+    background-color: var(--harvard-red);
+    color:white;
+
+    font-size: 1em;;
+
+    /* delete default submit border */
+    border: 0px;
+
+    padding-left:24px;
+    
+    
+
+    display: flex;
+    align-items: center;
+
+    /* animate clickable mouse cursor */
+    cursor: pointer;  
+}
+
+/* Define all label area/text which belong to input.nav-1 */
+label[class^="label-click"] {
+
+    width: 100px;
+    height: 100%;
+
+    background-color: var(--harvard-red);
+    color:white;
+
+    padding-left:24px;
+    
+
+    display: flex;
+    align-items: center;
+
+    /* animate clickable mouse cursor */
+    cursor: pointer;  
+}
+
+
+
+
+
+/* --------------------------------------------- */
+/* Hover , Click - Events                 */
+/* --------------------------------------------- */
+
+
+/* Hover & set Background by click ul - li */
+li.link-col-area:hover div.nav-title, 
+ li.link-col-area:hover label[class^="label-click"] ,
+    input#click-1:checked ~ label,
+        input[class^="submit-nav-"]:hover ,
+            input#click-2:focus-within { 
+
+                background-color: #585858;
+        
+}
+
+
+/* show sub content link box by hover and click - effects */
+/* > checkbox solution , ( :focus solution )*/
+li.link-col-area:nth-child(1):hover div.nav-title + ul.sub-list ,
+    li.link-col-area:nth-child(2):hover div.nav-title + ul.sub-list , 
+        input#click-1:checked ~ ul.sub-list , 
+            input#click-2:focus-within ~ ul.sub-list ,
+                ul.sub-list:hover  {
+
+                    display: block;
+}
+
+/* hover style for all li - elements in sub content */
+ul.sub-list li:hover {
+
+    background-color: var(--harvard-red);
+    color: white;
+} 
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------- */
+/* Link - Events for sub content                 */
+/* --------------------------------------------- */
+
+a:visited { color:black;}
+a:link { color:black; text-decoration: none; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
